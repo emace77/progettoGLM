@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-md bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://google.it" target="_blank"
+      <a class="navbar-brand" href="http://www.unito.it" target="_blank"
         >Claunet</a
       >
       <button
