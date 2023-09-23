@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-center">Il mio negozio</h1>
+  <h1 class="text-center">Il mio negozios</h1>
 </template>
 
 <script>
