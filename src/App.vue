@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.giustificati {
+.giustificato {
   text-align: justify;
 }
 
@@ -47,7 +47,7 @@ export default {
   background-color: beige;
 }
 
-.centrati {
+.centrato {
   text-align: center;
 }
 </style>
