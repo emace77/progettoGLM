@@ -47,7 +47,7 @@ export default {
   background-color: beige;
 }
 
-.centrato {
+.centrati {
   text-align: center;
 }
 </style>
