@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.giustificato {
+.giustificatos {
   text-align: justify;
 }
 
