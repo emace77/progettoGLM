@@ -39,26 +39,6 @@ export default {
 </script>
 
 <style scoped>
-.rosso {
-  background-color: red;
-}
-
-.verde {
-  background-color: green;
-}
-
-.blu {
-  background-color: blue;
-}
-
-.giallo {
-  background-color: yellow;
-}
-
-.azzurro {
-  background-color: aqua;
-}
-
 .giustificato {
   text-align: justify;
 }
