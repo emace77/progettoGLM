@@ -1,12 +1,10 @@
 <template>
   <div class="container">
-    <div class="row beige">
-      <div class="col">
+    <div class="row blue">
+      <div class="col-md-3">
         <HeaderBar></HeaderBar>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
+      <div class="col-md-9">
         <NavBar></NavBar>
       </div>
     </div>
@@ -23,15 +21,15 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
 import HeaderBar from "@/components/HeaderBar.vue";
+import NavBar from "@/components/NavBar.vue";
 import FooterBar from "@/components/FooterBar.vue";
 import SideBar from "@/components/SideBar.vue";
 
 export default {
   components: {
-    NavBar,
     HeaderBar,
+    NavBar,
     FooterBar,
     SideBar,
   },
@@ -39,12 +37,12 @@ export default {
 </script>
 
 <style scoped>
-.giustificatozz {
+.giustificato {
   text-align: justify;
 }
 
-.beige {
-  background-color: beige;
+.blue {
+  background-color: #006fba;
 }
 
 .centrato {

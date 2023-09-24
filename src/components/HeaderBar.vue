@@ -1,5 +1,11 @@
 <template>
-	<h1 class="text-center">Il mio negozios</h1>
+  <h1>
+    <img
+      src="../assets/bookvue_white.png"
+      class="img-fluid"
+      alt="logo bookshop"
+    />
+  </h1>
 </template>
 
 <script>
