@@ -1,9 +1,13 @@
 <template>
-  <nav class="navbar navbar-expand-md bg-light">
+  <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <a class="navbar-brand" href="http://www.unito.it" target="_blank"
-        >Claunet</a
-      >
+        ><img
+          src="../assets/bookvue_white.png"
+          class="img-fluid"
+          alt="logo bookshop"
+        />
+      </a>
       <button
         class="navbar-toggler"
         type="button"

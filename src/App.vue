@@ -1,10 +1,12 @@
 <template>
   <div class="container">
-    <div class="row blue">
-      <div class="col-md-3">
+    <div class="row">
+      <div class="col">
         <HeaderBar></HeaderBar>
       </div>
-      <div class="col-md-9">
+    </div>
+    <div class="row blue">
+      <div class="col">
         <NavBar></NavBar>
       </div>
     </div>

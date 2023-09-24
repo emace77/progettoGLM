@@ -1,11 +1,5 @@
 <template>
-  <h1>
-    <img
-      src="../assets/bookvue_white.png"
-      class="img-fluid"
-      alt="logo bookshop"
-    />
-  </h1>
+  <h1>il mio negozietto</h1>
 </template>
 
 <script>
