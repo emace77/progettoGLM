@@ -38,16 +38,19 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .giustificato {
   text-align: justify;
 }
 
+.centrato {
+  text-align: center;
+}
 .blue {
   background-color: #006fba;
 }
 
-.centrato {
-  text-align: center;
+.navbar-brand img {
+  width: 20%;
 }
 </style>
