@@ -1,8 +1,23 @@
 <template>
   <div class="container">
-    <div class="row blue">
+    <div class="row">
       <div class="col">
+        <HeaderBar></HeaderBar>
+      </div>
+    </div>
+    <div class="row blue">
+      <div class="col-md-9">
         <NavBar></NavBar>
+      </div>
+      <div class="container col-md-3">
+        <ul class="navbar-nav" style="flex-direction: row">
+          <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">Pagina 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">Pagina 3</a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="row">
@@ -18,12 +33,14 @@
 </template>
 
 <script>
+import HeaderBar from "@/components/HeaderBar.vue";
 import NavBar from "@/components/NavBar.vue";
 import FooterBar from "@/components/FooterBar.vue";
 import SideBar from "@/components/SideBar.vue";
 
 export default {
   components: {
+    HeaderBar,
     NavBar,
     FooterBar,
     SideBar,
@@ -41,14 +58,6 @@ export default {
 }
 .blue {
   background-color: #006fba;
-}
-.white,
-.white a:link,
-white a:visited {
-  color: #fff;
-}
-.white a:hover {
-  color: #ddd;
 }
 
 .navbar-brand img {
