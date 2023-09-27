@@ -54,4 +54,12 @@ white a:visited {
 .navbar-brand img {
   width: 200px;
 }
+.navbar .container-fluid {
+  justify-content: normal;
+}
+
+.navbar-toggler:focus {
+  background-color: #00aeef;
+  box-shadow: none;
+}
 </style>
