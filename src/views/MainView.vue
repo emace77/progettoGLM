@@ -17,7 +17,7 @@
   <!-- fine Swiper -->
 
   <div class="about">
-    <h1>Il mio negozio</h1>
+    <h1>I libri più venduti</h1>
     <p class="giustificato">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
