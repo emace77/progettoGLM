@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary white">
     <div class="container-fluid ps-0">
       <button
-        class="navbar-toggler"
+        class="navbar-toggler p-0"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
@@ -61,7 +61,7 @@
       </div>
       <div class="d-flex">
         <ul class="navbar-nav flex-row">
-          <li class="nav-item"><a class="nav-link" href="#">login</a></li>
+          <li class="nav-item"><a class="nav-link me-2" href="#">login</a></li>
           <li class="nav-item"><a class="nav-link" href="#">carello</a></li>
         </ul>
       </div>
