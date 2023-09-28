@@ -11,7 +11,7 @@
       </div>
       <div class="col-md-3 d-none d-md-block"><SideBar></SideBar></div>
     </div>
-    <div class="row beige">
+    <div class="row">
       <div class="col"><FooterBar></FooterBar></div>
     </div>
   </div>
