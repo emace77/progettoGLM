@@ -62,7 +62,7 @@
       <div class="d-flex">
         <ul class="navbar-nav flex-row">
           <li class="nav-item"><a class="nav-link me-2" href="#">login</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">carello</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">carrello</a></li>
         </ul>
       </div>
     </div>
