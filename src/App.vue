@@ -1,9 +1,9 @@
 <!-- eslint-disable -->
 <template>
   <div class="container">
-  <div class="row blue">
-  <div class="col">
-      <NavBar></NavBar>
+    <div class="row blue">
+      <div class="col">
+        <NavBar></NavBar>
       </div>
     </div>
     <div class="row">
@@ -35,8 +35,7 @@ export default {
 
 <style>
 /* eslint-disable */
-.giustificato 
-{
+.giustificato {
   text-align: justify;
 }
 
