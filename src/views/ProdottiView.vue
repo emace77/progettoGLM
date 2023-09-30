@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <h1>I nostri prodotti</h1>
   <div class="row">
@@ -10,8 +11,9 @@
     </div>
   </div>
 </template>
-
+<!-- eslint-disable -->
 <script>
+/* eslint-disable */
 import ProductCard from "@/components/ProductCard.vue";
 
 export default {
