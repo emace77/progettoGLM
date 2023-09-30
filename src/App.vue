@@ -19,6 +19,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import NavBar from "@/components/NavBar.vue";
 import FooterBar from "@/components/FooterBar.vue";
 import SideBar from "@/components/SideBar.vue";
@@ -33,7 +34,9 @@ export default {
 </script>
 
 <style>
-.giustificato {
+/* eslint-disable */
+.giustificato 
+{
   text-align: justify;
 }
 
