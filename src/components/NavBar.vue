@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary white">
     <div class="container-fluid ps-0">
@@ -68,7 +69,8 @@
     </div>
   </nav>
 </template>
-
+<!-- eslint-disable -->
 <script>
+/* eslint-disable */
 export default {};
 </script>
