@@ -1,5 +1,5 @@
+<!-- eslint-disable -->
 <template>
-  <!-- eslint-disable -->
     <div class="container">
   <div class="row blue">
   <div class="col">
@@ -17,7 +17,7 @@
     </div>
   </div>
 </template>
-
+<!-- eslint-disable -->
 <script>
 /* eslint-disable */
 import NavBar from "@/components/NavBar.vue";
