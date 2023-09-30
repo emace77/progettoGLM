@@ -2,7 +2,7 @@
   <!-- eslint-disable -->
   <div class="container">
   <div class="row blue">
-      <div class="col">
+  <div class="col">
         <NavBar></NavBar>
       </div>
     </div>
