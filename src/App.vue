@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-    <div class="container">
+  <div class="container">
   <div class="row blue">
   <div class="col">
         <NavBar></NavBar>
