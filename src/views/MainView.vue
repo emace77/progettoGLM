@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div
     class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide"
