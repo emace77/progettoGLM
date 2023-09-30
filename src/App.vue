@@ -3,7 +3,7 @@
   <div class="container">
   <div class="row blue">
   <div class="col">
-        <NavBar></NavBar>
+      <NavBar></NavBar>
       </div>
     </div>
     <div class="row">
