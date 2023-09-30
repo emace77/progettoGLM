@@ -12,7 +12,7 @@
       </div>
       <div class="col-md-3 d-none d-md-block"><SideBar></SideBar></div>
     </div>
-    <div class="row">
+    <div class="row blue">
       <div class="col"><FooterBar></FooterBar></div>
     </div>
   </div>
@@ -42,15 +42,16 @@ export default {
 .centrato {
   text-align: center;
 }
+
 .blue {
   background-color: #006fba;
-}
-.white,
-.white a:link,
-white a:visited {
   color: #fff;
 }
-.white a:hover {
+.blue a:link, .blue a:visited, .blue a:active {
+  color: #fff;
+}
+.blue a:hover {
+  background-color: #006fba;
   color: #ddd;
 }
 
