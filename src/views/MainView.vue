@@ -1,6 +1,22 @@
 <!-- eslint-disable -->
 <template>
   <div class="row">
+    <div class="container px-3 py-3">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="../assets/images/hero.png" class="d-block mx-lg-auto img-fluid" alt="Image by pch.vector on Freepik" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">La tua libereria sempre a portata di click</h1>
+          <p class="lead">Scegli il tuo libro preferito e ricevilo a casa tua</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Come funziona?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <div class="col">
       <h1>I libri più venduti</h1>
       <div id="carouselExampleCaptions" class="carousel slide p-4 mb-5 mb-sm-3">
