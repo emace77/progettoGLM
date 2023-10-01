@@ -33,6 +33,10 @@ export default {
   background-color:#006fba ;
   color:#ffff;
 }
+.btn-blu:hover{
+  background-color:#00aeef ;
+  color:#ffff;
+}
 .card-title{
   color:#006fba;
 }
