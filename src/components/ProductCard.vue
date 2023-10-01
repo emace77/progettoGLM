@@ -31,6 +31,7 @@ export default {
 <style>
 .btn-blu{
   background-color:#006fba ;
+  color:#ffff;
 }
 
 </style>
