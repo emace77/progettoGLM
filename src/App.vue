@@ -13,7 +13,7 @@
       <div class="col-md-9 col-sm-12">
         <router-view />
       </div>
-      <div class="col-md-3 d-none d-md-block">
+      <div class="col-md-3 d-none d-md-block px-05">
         <SideBar></SideBar>
       </div>
     </div>
@@ -55,6 +55,12 @@ h1 {
 .centrato {
   text-align: center;
 }
+
+.px-05 {
+  padding-right: 0rem !important;
+  padding-left: 3rem !important;
+}
+
 
 /* COLORI */
 .blue {

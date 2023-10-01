@@ -7,13 +7,13 @@ export default createStore({
       {
         id: 1,
         title: "Feltrinelli -10%",
-        image: "https://picsum.photos/200/100?random=3",
+        image: "scuola.png",
         text: "Tutti i libri della collana Classici con sconto del 10% fino al 31/10/2023",
       },
       {
         id: 2,
         title: "Tutti a scuola!",
-        image: "https://picsum.photos/200/100?random=12",
+        image: "../assets/images/scuola.png",
         text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20€",
       },
       {
