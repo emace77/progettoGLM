@@ -71,22 +71,41 @@ export default {
   box-shadow: none;
 }
 
-/* CAROUSEL 
-.carousel-caption {
-  position: relative;
-  right: 0%;
-  left: 0%;
-}*/
+/* CAROUSEL */
+.carousel {
+  background-color: #eee;
+}
+.carousel-item img {
+  width: 30%;
+  margin-left: 15%;
 
-h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
+}
+.carousel-caption {
+  top: 1%;
+  right: auto;
+  left: 50%;
+  width: 40%;
+}
+.carousel-caption p {
+  color: #000;
+}
+.carousel-caption h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
   color: #006fba;
   text-decoration: none;
   }
-h5:nth-child(2) a:hover {
+.carousel-caption h5:nth-child(2) a:hover {
   color: #006fba;
   }
+.carousel-indicators {
+  bottom: -3%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #444;
+}
 .carousel-control-prev-icon {
     background-image: url(assets/images/caret-left.svg);
 }
-
+.carousel-control-next-icon {
+    background-image: url(assets/images/caret-right.svg);
+}
 </style>
