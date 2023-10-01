@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createStore } from "vuex";
 
 export default createStore({
@@ -26,7 +27,7 @@ export default createStore({
       {
         id: 1,
         title: "Karolus. Il romanzo di Carlo Magno",
-        image: "https://picsum.photos/200/100?random=11",
+        image: "/images/karolus.jpg",
         text: "Che cosa si agitava nel cuore di Karolus, il grande condottiero, quando si preparava a diventare reggente unico del Sacro Romano Impero? Quali sogni – e quali incubi – ne popolavano l'animo?",
       },
       {
