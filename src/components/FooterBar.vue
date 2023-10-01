@@ -1,7 +1,7 @@
 <!-- eslint-disable -->
 <template>
   <footer
-    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top blue"
+    class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2"
   >
     <div class="col-md-4 d-flex align-items-center white">
       <a href="/" class="navbar-brand">

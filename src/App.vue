@@ -1,9 +1,9 @@
 <!-- eslint-disable -->
 <template>
   <div class="container">
-  <div class="row blue">
-  <div class="col">
-      <NavBar></NavBar>
+    <div class="row blue">
+      <div class="col">
+        <NavBar></NavBar>
       </div>
     </div>
     <div class="row">
@@ -12,7 +12,7 @@
       </div>
       <div class="col-md-3 d-none d-md-block"><SideBar></SideBar></div>
     </div>
-    <div class="row">
+    <div class="row blue">
       <div class="col"><FooterBar></FooterBar></div>
     </div>
   </div>
@@ -35,26 +35,30 @@ export default {
 
 <style>
 /* eslint-disable */
-.giustificato 
-{
+
+/* GENERALI */
+.giustificato {
   text-align: justify;
 }
 
 .centrato {
   text-align: center;
 }
+
+/* COLORI */
 .blue {
   background-color: #006fba;
-}
-.white,
-.white a:link,
-white a:visited {
   color: #fff;
 }
-.white a:hover {
+.blue a:link, .blue a:visited, .blue a:active {
+  color: #fff;
+}
+.blue a:hover {
+  background-color: #006fba;
   color: #ddd;
 }
 
+/* NAV */
 .navbar-brand img {
   width: 200px;
 }
@@ -66,4 +70,32 @@ white a:visited {
   background-color: #00aeef;
   box-shadow: none;
 }
+
+/* CAROUSEL */
+.carousel-item-custom {
+  width: 30%;
+  margin: 0 1%;
+}
+
+.carousel-item-custom img {
+  width: 100%;
+}
+
+.carousel-caption {
+  position: relative;
+  right: 0%;
+  left: 0%;
+}
+
+h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
+  color: #006fba;
+  text-decoration: none;
+  }
+h5:nth-child(2) a:hover {
+  color: #006fba;
+  }
+
+/*.carousel-inner .carousel-item {
+  display: block;
+  }*/
 </style>

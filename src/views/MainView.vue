@@ -1,243 +1,66 @@
 <!-- eslint-disable -->
 <template>
-  <div
-    class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide"
-    data-bs-carousel-splide
-  >
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <div class="it-single-slide-wrapper">
-            <div class="card-wrapper">
-              <div class="card card-img no-after">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://via.placeholder.com/480x360/ebebeb/808080/?text=Immagine1"
-                        title="titolo immagine"
-                        alt="descrizione immagine"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-3 px-md-4">
-                  <h5 class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <a class="read-more" href="#">
-                    <span class="text"
-                      >Leggi di più
-                      <span class="visually-hidden"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit…</span
-                      ></span
-                    >
-                    <svg class="icon">
-                      <use
-                        href="http://tema.unito.it/dist/svg/sprite.svg#it-arrow-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
+  <div class="row">
+    <div class="col">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active float-lg-start">
+            <div class="carousel-item-custom">
+              <a href="#"><img src="../assets/images/img1.png" class="d-block" alt="test"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="#">Maria Rossi</a></h5>
+                <h5><a href="#">Titolo libro 1</a></h5>
+                <p><a href="#">13.00 €</a></p>
               </div>
             </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="it-single-slide-wrapper">
-            <div class="card-wrapper">
-              <div class="card card-img no-after">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://via.placeholder.com/480x360/ebebeb/808080/?text=Immagine2"
-                        title="titolo immagine"
-                        alt="descrizione immagine"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-3 px-md-4">
-                  <h5 class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <a class="read-more" href="#">
-                    <span class="text"
-                      >Leggi di più
-                      <span class="visually-hidden"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit…</span
-                      ></span
-                    >
-                    <svg class="icon">
-                      <use
-                        href="http://tema.unito.it/dist/svg/sprite.svg#it-arrow-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
+          <div class="carousel-item float-lg-start">
+            <div class="carousel-item-custom">
+              <a href="#"><img src="../assets/images/img2.png" class="d-block" alt="test"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="#">Lucia Neri</a></h5>
+                <h5><a href="#">Titolo libro 2</a></h5>
+                <p><a href="#">18.00 €</a></p>
               </div>
             </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="it-single-slide-wrapper">
-            <div class="card-wrapper">
-              <div class="card card-img no-after">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://via.placeholder.com/480x360/ebebeb/808080/?text=Immagine3"
-                        title="titolo immagine"
-                        alt="descrizione immagine"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-3 px-md-4">
-                  <h5 class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <a class="read-more" href="#">
-                    <span class="text"
-                      >Leggi di più
-                      <span class="visually-hidden"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit…</span
-                      ></span
-                    >
-                    <svg class="icon">
-                      <use
-                        href="http://tema.unito.it/dist/svg/sprite.svg#it-arrow-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
+          <div class="carousel-item float-lg-start">
+            <div class="carousel-item-custom">
+              <a href="#"><img src="../assets/images/img3.png" class="d-block" alt="test"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="#">Antonio Bianchi</a></h5>
+                <h5><a href="#">Titolo libro 3</a></h5>
+                <p><a href="#">15.00 €</a></p>
               </div>
             </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="it-single-slide-wrapper">
-            <div class="card-wrapper">
-              <div class="card card-img no-after">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://via.placeholder.com/480x360/ebebeb/808080/?text=Immagine4"
-                        title="titolo immagine"
-                        alt="descrizione immagine"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-3 px-md-4">
-                  <h5 class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <a class="read-more" href="#">
-                    <span class="text"
-                      >Leggi di più
-                      <span class="visually-hidden"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit…</span
-                      ></span
-                    >
-                    <svg class="icon">
-                      <use
-                        href="http://tema.unito.it/dist/svg/sprite.svg#it-arrow-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
+          <div class="carousel-item float-lg-start">
+            <div class="carousel-item-custom">
+              <a href="#"><img src="../assets/images/img3.png" class="d-block" alt="test"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="#">Antonio Bianchi</a></h5>
+                <h5><a href="#">Titolo libro 4</a></h5>
+                <p><a href="#">15.00 €</a></p>
               </div>
             </div>
           </div>
-        </li>
-        <li class="splide__slide">
-          <div class="it-single-slide-wrapper">
-            <div class="card-wrapper">
-              <div class="card card-img no-after">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://via.placeholder.com/480x360/ebebeb/808080/?text=Immagine5"
-                        title="titolo immagine"
-                        alt="descrizione immagine"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-3 px-md-4">
-                  <h5 class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <a class="read-more" href="#">
-                    <span class="text"
-                      >Leggi di più
-                      <span class="visually-hidden"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit…</span
-                      ></span
-                    >
-                    <svg class="icon">
-                      <use
-                        href="http://tema.unito.it/dist/svg/sprite.svg#it-arrow-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="it-single-slide-wrapper">
-            <div class="card-wrapper">
-              <div class="card card-img no-after">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://via.placeholder.com/480x360/ebebeb/808080/?text=Immagine6"
-                        title="titolo immagine"
-                        alt="descrizione immagine"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body px-3 px-md-4">
-                  <h5 class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <a class="read-more" href="#">
-                    <span class="text"
-                      >Leggi di più
-                      <span class="visually-hidden"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit…</span
-                      ></span
-                    >
-                    <svg class="icon">
-                      <use
-                        href="http://tema.unito.it/dist/svg/sprite.svg#it-arrow-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </div>
-
   <div class="about">
     <h1>I libri più venduti</h1>
     <p class="giustificato">

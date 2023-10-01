@@ -13,6 +13,7 @@
 </template>
 <!-- eslint-disable -->
 <script>
+/* eslint-disable */
 import ProductCard from "@/components/ProductCard.vue";
 
 export default {
