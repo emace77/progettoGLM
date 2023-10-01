@@ -1,9 +1,9 @@
 <!-- eslint-disable -->
 <template>
   <div class="row mb-1">
-    <div class="container">
-      <div class="row flex-lg-row-reverse align-items-center g-5 px-2 py-1">
-        <div class="col-10 col-sm-8 col-lg-6">
+    <div class="container p-0">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-10 col-sm-10 col-lg-6">
           <img src="../assets/images/hero.png" class="d-block mx-lg-auto img-fluid" alt="Image by pch.vector on Freepik" loading="lazy">
         </div>
         <div class="col-lg-6">

@@ -9,11 +9,13 @@
         <LogCart></LogCart>
       </div>
     </div>
-    <div class="row  px-5 px-5">
+    <div class="row px-5 py-3">
       <div class="col-md-9 col-sm-12">
         <router-view />
       </div>
-      <div class="col-md-3 d-none d-md-block"><SideBar></SideBar></div>
+      <div class="col-md-3 d-none d-md-block">
+        <SideBar></SideBar>
+      </div>
     </div>
     <div class="row blue">
       <div class="col"><FooterBar></FooterBar></div>

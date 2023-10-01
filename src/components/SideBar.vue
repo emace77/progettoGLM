@@ -1,4 +1,5 @@
 <template>
+  <h1 class="fs-4 text fw-bold">Libri in offerta</h1>
   <SideCard
     v-for="card in $store.state.cards"
     :cardData="card"
