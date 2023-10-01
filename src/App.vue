@@ -1,12 +1,12 @@
 <!-- eslint-disable -->
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row blue">
       <div class="col">
         <NavBar></NavBar>
       </div>
     </div>
-    <div class="row">
+    <div class="row  px-5 px-5">
       <div class="col-md-9 col-sm-12">
         <router-view />
       </div>
@@ -37,6 +37,10 @@ export default {
 /* eslint-disable */
 
 /* GENERALI */
+h1 {
+  color: #006fba;
+}
+
 .giustificato {
   text-align: justify;
 }
@@ -56,6 +60,11 @@ export default {
 .blue a:hover {
   background-color: #006fba;
   color: #ddd;
+}
+
+.blue-light {
+  background-color: #b2d4ea;
+  color: #02548b;
 }
 
 /* NAV */
@@ -84,7 +93,7 @@ export default {
   top: 1%;
   right: auto;
   left: 50%;
-  width: 40%;
+  width: 35%;
 }
 .carousel-caption p {
   color: #000;
@@ -97,7 +106,7 @@ export default {
   color: #006fba;
   }
 .carousel-indicators {
-  bottom: -10%;
+  bottom: -7%;
 }
 .carousel-indicators [data-bs-target] {
   background-color: #444;

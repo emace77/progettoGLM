@@ -1,7 +1,7 @@
 <!-- eslint-disable -->
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary white">
-    <div class="container-fluid ps-0">
+    <div class="container-fluid px-0 px-lg-3">
       <button
         class="navbar-toggler p-0"
         type="button"

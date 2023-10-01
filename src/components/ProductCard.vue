@@ -9,7 +9,7 @@
       </p>
       <router-link
         :to="{ name: 'dettaglio', params: { productId: productData.id } }"
-        class="btn btn-primary"
+        class="btn btn-blu"
         >Trama</router-link
       >
     </div>
@@ -27,3 +27,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.btn-blu{
+  background-color:#006fba ;
+  color:#ffff;
+}
+.btn-blu:hover{
+  background-color:#00aeef ;
+  color:#ffff;
+}
+.card-title{
+  color:#006fba;
+}
+
+</style>
