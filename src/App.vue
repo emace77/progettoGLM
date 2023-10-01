@@ -35,6 +35,8 @@ export default {
 
 <style>
 /* eslint-disable */
+
+/* GENERALI */
 .giustificato {
   text-align: justify;
 }
@@ -43,6 +45,7 @@ export default {
   text-align: center;
 }
 
+/* COLORI */
 .blue {
   background-color: #006fba;
   color: #fff;
@@ -55,6 +58,7 @@ export default {
   color: #ddd;
 }
 
+/* NAV */
 .navbar-brand img {
   width: 200px;
 }
@@ -66,4 +70,32 @@ export default {
   background-color: #00aeef;
   box-shadow: none;
 }
+
+/* CAROUSEL */
+.carousel-item-custom {
+  width: 30%;
+  margin: 0 1%;
+}
+
+.carousel-item-custom img {
+  width: 100%;
+}
+
+.carousel-caption {
+  position: relative;
+  right: 0%;
+  left: 0%;
+}
+
+h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
+  color: #006fba;
+  text-decoration: none;
+  }
+h5:nth-child(2) a:hover {
+  color: #006fba;
+  }
+
+/*.carousel-inner .carousel-item {
+  display: block;
+  }*/
 </style>

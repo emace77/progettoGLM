@@ -2,15 +2,15 @@
 <template>
   <div class="row">
     <div class="col">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active float-lg-start">
-            <div class="carousel-item-custom">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item-custom float-lg-start">
               <a href="#"><img src="../assets/images/img1.png" class="d-block" alt="test"></a>
               <div class="carousel-caption d-none d-md-block">
                 <h5><a href="#">Maria Rossi</a></h5>
@@ -18,9 +18,7 @@
                 <p><a href="#">13.00 €</a></p>
               </div>
             </div>
-          </div>
-          <div class="carousel-item float-lg-start">
-            <div class="carousel-item-custom">
+            <div class="carousel-item-custom float-lg-start">
               <a href="#"><img src="../assets/images/img2.png" class="d-block" alt="test"></a>
               <div class="carousel-caption d-none d-md-block">
                 <h5><a href="#">Lucia Neri</a></h5>
@@ -28,9 +26,7 @@
                 <p><a href="#">18.00 €</a></p>
               </div>
             </div>
-          </div>
-          <div class="carousel-item float-lg-start">
-            <div class="carousel-item-custom">
+            <div class="carousel-item-custom float-lg-start">
               <a href="#"><img src="../assets/images/img3.png" class="d-block" alt="test"></a>
               <div class="carousel-caption d-none d-md-block">
                 <h5><a href="#">Antonio Bianchi</a></h5>
@@ -39,14 +35,18 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item float-lg-start">
-            <div class="carousel-item-custom">
-              <a href="#"><img src="../assets/images/img3.png" class="d-block" alt="test"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5><a href="#">Antonio Bianchi</a></h5>
-                <h5><a href="#">Titolo libro 4</a></h5>
-                <p><a href="#">15.00 €</a></p>
-              </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../assets/images/img1.png" class="d-block w-33" alt="test">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/img1.png" class="d-block w-33" alt="test">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
