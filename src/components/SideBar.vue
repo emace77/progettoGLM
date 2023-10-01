@@ -1,5 +1,6 @@
+<!-- eslint-disable -->
 <template>
-  <h1 class="fs-4 text fw-bold">Libri in offerta</h1>
+  <h1 class="fs-4 text fw-bold">Promozioni</h1>
   <SideCard
     v-for="card in $store.state.cards"
     :cardData="card"
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import SideCard from "@/components/SideCard.vue";
 
 export default {

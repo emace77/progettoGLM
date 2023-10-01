@@ -6,21 +6,21 @@ export default createStore({
     cards: [
       {
         id: 1,
-        title: "Titolo#1",
+        title: "Feltrinelli -10%",
         image: "https://picsum.photos/200/100?random=3",
-        text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
+        text: "Tutti i libri della collana Classici con sconto del 10% fino al 31/10/2023",
       },
       {
         id: 2,
-        title: "Titolo#2",
+        title: "Tutti a scuola!",
         image: "https://picsum.photos/200/100?random=12",
-        text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
+        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20€",
       },
       {
         id: 3,
-        title: "Titolo#3",
+        title: "Libri usati",
         image: "https://picsum.photos/200/100?random=4",
-        text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
+        text: "Pagine che hanno ancora tanto da dire. Dai una nuova vita a un libro usato e risparmia",
       },
     ],
     products: [
