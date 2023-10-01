@@ -25,7 +25,7 @@ export default createStore({
     products: [
       {
         id: 1,
-        title: "Prodotto#1",
+        title: "Libro#1",
         image: "https://picsum.photos/200/100?random=11",
         text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
       },
