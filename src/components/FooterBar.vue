@@ -5,7 +5,7 @@
   >
     <div class="col-md-4 d-flex align-items-center white">
       <a href="/" class="navbar-brand">
-        <img src="../assets/files/bookvue_white.png" alt="logo bookshop" />
+        <img src="../assets/images/bookvue_white.png" alt="logo bookshop" />
       </a>
       <span class="mb-3 mb-md-0">© 2023 BookVue</span>
     </div>

@@ -86,7 +86,7 @@ h5:nth-child(2) a:hover {
   color: #006fba;
   }
 .carousel-control-prev-icon {
-    background-image: url();
+    background-image: url(assets/images/caret-left.svg);
 }
 
 </style>
