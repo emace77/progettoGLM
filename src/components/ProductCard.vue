@@ -10,7 +10,7 @@
       <router-link
         :to="{ name: 'dettaglio', params: { productId: productData.id } }"
         class="btn btn-primary"
-        >Dettagli</router-link
+        >Trama</router-link
       >
     </div>
   </div>
