@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <div class="row">
+  <div class="row mb-1">
     <div class="container">
       <div class="row flex-lg-row-reverse align-items-center g-5 px-2 py-1">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-5">
     <div class="col">
       <h1 class="display-6 fw-bold text-center">I libri più venduti</h1>
       <div id="carouselExampleCaptions" class="carousel slide p-4 mb-5 mb-sm-3">

@@ -2,8 +2,11 @@
 <template>
   <div class="container-fluid">
     <div class="row blue">
-      <div class="col">
+      <div class="col-9">
         <NavBar></NavBar>
+      </div>
+      <div class="col-3">
+        <LogCart></LogCart>
       </div>
     </div>
     <div class="row  px-5 px-5">
@@ -23,12 +26,14 @@
 import NavBar from "@/components/NavBar.vue";
 import FooterBar from "@/components/FooterBar.vue";
 import SideBar from "@/components/SideBar.vue";
+import LogCart from "@/components/LogCart.vue";
 
 export default {
   components: {
     NavBar,
     FooterBar,
     SideBar,
+    LogCart,
   },
 };
 </script>
@@ -67,6 +72,11 @@ h1 {
   color: #02548b;
 }
 
+.btn-primary 
+{
+  background-color: #006fba;
+}
+
 /* NAV */
 .navbar-brand img {
   width: 200px;
@@ -98,6 +108,13 @@ h1 {
 .carousel-caption p {
   color: #000;
 }
+.carousel-caption h5:nth-child(1) a:link, h5:nth-child(1) a:visited, h5:nth-child(1) a:active {
+  color: #9e5c00;
+  text-decoration: none;
+  }
+.carousel-caption h5:nth-child(1) a:hover {
+  color: #9e5c00;
+  }
 .carousel-caption h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
   color: #006fba;
   text-decoration: none;
