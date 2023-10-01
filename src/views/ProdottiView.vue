@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <h1>Elenco libri</h1>
+  <h1 class="titolo_listalibri">Elenco libri</h1>
   <div class="row">
     <div
       v-for="product in $store.state.products"
@@ -22,3 +22,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.titolo_listalibri{
+  color:#006fba;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+</style>

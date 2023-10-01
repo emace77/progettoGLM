@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createStore } from "vuex";
 
 export default createStore({
@@ -33,13 +34,13 @@ export default createStore({
         id: 2,
         title: "Il prigioniero dell’interno 7",
         image: "https://picsum.photos/200/100?random=14",
-        text: "Neanche rimanendo asserragliato nel suo appartamento, dietro una cortina di articoli satirici e di vita sbirciata dalla finestra, Vittorio riesce a ottenere l'unica cosa che gli sta davvero a cuore: non essere coinvolto da niente, mai, per nessun motivo. Anzi, nei giorni lenti del lockdown diventa suo malgrado il punto di riferimento di una comunità casuale e sgangherata: quella dei vicini di casa. Lui non lo sa ancora, ma è proprio mentre fuori infuria la tempesta che finalmente potrà imparare qualcosa del mondo e di se stesso.",
+        text: "Neanche rimanendo asserragliato nel suo appartamento, dietro una cortina di articoli satirici e di vita sbirciata dalla finestra, Vittorio riesce a ottenere l'unica cosa che gli sta davvero a cuore: non essere coinvolto da niente, mai, per nessun motivo.",
       },
       {
         id: 3,
         title: "Avere tutto",
         image: "https://picsum.photos/200/100?random=7",
-        text: "Libro vincitore del Premio Bagutta 2023 e finalista del Premio Lattes Grinzane 2023. Dove vorresti essere con un milione di euro in più e parecchi anni in meno? Un figlio, il ritorno a casa, la partita finale con la sua famiglia. E quell’ossessione che lo muove da sempre: la vita non è avere di più, è rischiare per avere tutto.",
+        text: "Libro vincitore del Premio Bagutta 2023. Dove vorresti essere con un milione di euro in più e parecchi anni in meno? Un figlio, il ritorno a casa, la partita finale con la sua famiglia. E quell’ossessione che lo muove da sempre: la vita non è avere di più, è rischiare per avere tutto.",
       },
       {
         id: 4,
