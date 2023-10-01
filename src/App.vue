@@ -37,6 +37,10 @@ export default {
 /* eslint-disable */
 
 /* GENERALI */
+h1 {
+  color: #006fba;
+}
+
 .giustificato {
   text-align: justify;
 }
