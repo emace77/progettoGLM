@@ -5,6 +5,9 @@
       <div class="col-lg-10">
         <div class="card bg-transparent p-xl-3 border-0 mb-3">
           <div class="row g-0">
+            <p><router-link v-bind:to="{ name: 'prodotti' }"
+        >Torna al catalogo</router-link>
+    </p>
             <div class="col-lg-5 mb-4 mb-xl-0">
               <img src="../assets/images/karolus.jpg" class="w-100 rounded" alt="Immagine del prodotto">
             </div>
@@ -12,15 +15,15 @@
               <div class="card-body d-flex flex-column py-0">
                 <div>
                   <p class="fs-7 m-0">Franco Forte</p>
-                  <h1 class="text-main fs-4">{{$route.params.productId}}</h1>
+                  <h1 class="text-main fs-4 ">{{$route.params.productId}}</h1>
                 </div>
                 <div>
-                  <p class="fs-7 m-0"><span class="fw-semibold">Editore:</span> Crescere</p>
-                  <p class="fs-7 m-0"><span class="fw-semibold">Genere:</span> romanzo storico </p>
-                  <p class="fs-7 m-0"><span class="fw-semibold">ISBN:</span> 9788883379086</p>
-                  <p class="fs-7 m-0"><span class="fw-semibold">Anno di pubblicazione:</span> 01/01/2021</p>
-                  <p class="fs-7 m-0"><span class="fw-semibold">Numero pagine:</span> 192</p>
-                  <p class="fs-7 m-0"><span class="fw-semibold">Lingua:</span> italiano</p>
+                  <p class="fs-7 m-0"><span class="fw-bold">Editore:</span> Crescere</p>
+                  <p class="fs-7 m-0"><span class="fw-bold">Genere:</span> romanzo storico </p>
+                  <p class="fs-7 m-0"><span class="fw-bold">ISBN:</span> 9788883379086</p>
+                  <p class="fs-7 m-0"><span class="fw-bold">Anno di pubblicazione:</span> 01/01/2021</p>
+                  <p class="fs-7 m-0"><span class="fw-bold">Numero pagine:</span> 192</p>
+                  <p class="fs-7 m-0"><span class="fw-bold">Lingua:</span> italiano</p>
                 </div>
                 <hr class="my-1 text-secondary">
                 <div>
