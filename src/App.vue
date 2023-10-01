@@ -85,5 +85,8 @@ h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
 h5:nth-child(2) a:hover {
   color: #006fba;
   }
+.carousel-control-prev-icon {
+    background-image: url();
+}
 
 </style>
