@@ -33,5 +33,8 @@ export default {
   background-color:#006fba ;
   color:#ffff;
 }
+.card-title{
+  color:#006fba;
+}
 
 </style>
