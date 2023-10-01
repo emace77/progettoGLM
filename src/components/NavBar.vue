@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary white">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid px-0 px-lg-3">
       <button
         class="navbar-toggler p-0"
@@ -42,12 +42,6 @@
               >Prodotti</router-link
             >
           </li>
-        </ul>
-      </div>
-      <div class="d-flex">
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item"><a class="nav-link me-2" href="#">login</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">carrello</a></li>
         </ul>
       </div>
     </div>

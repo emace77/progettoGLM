@@ -2,8 +2,11 @@
 <template>
   <div class="container-fluid">
     <div class="row blue">
-      <div class="col">
+      <div class="col-9">
         <NavBar></NavBar>
+      </div>
+      <div class="col-3">
+        <LogCart></LogCart>
       </div>
     </div>
     <div class="row  px-5 px-5">
@@ -23,12 +26,14 @@
 import NavBar from "@/components/NavBar.vue";
 import FooterBar from "@/components/FooterBar.vue";
 import SideBar from "@/components/SideBar.vue";
+import LogCart from "@/components/LogCart.vue";
 
 export default {
   components: {
     NavBar,
     FooterBar,
     SideBar,
+    LogCart,
   },
 };
 </script>
