@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div class="card mt-4">
     <img :src="productData.image" class="card-img-top" alt="Prodotto" />
@@ -14,7 +15,7 @@
     </div>
   </div>
 </template>
-
+<!-- eslint-disable -->
 <script>
 export default {
   props: {
