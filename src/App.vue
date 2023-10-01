@@ -97,7 +97,7 @@ export default {
   color: #006fba;
   }
 .carousel-indicators {
-  bottom: -3%;
+  bottom: -10%;
 }
 .carousel-indicators [data-bs-target] {
   background-color: #444;

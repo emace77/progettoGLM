@@ -3,11 +3,12 @@
   <div class="row">
     <div class="col">
       <h1>I libri più venduti</h1>
-      <div id="carouselExampleCaptions" class="carousel slide p-4 pb-6">
-        <div class="carousel-indicators">
+      <div id="carouselExampleCaptions" class="carousel slide p-4 mb-5 mb-sm-3">
+        <div class="carousel-indicators d-none d-lg-flex">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
