@@ -71,21 +71,12 @@ export default {
   box-shadow: none;
 }
 
-/* CAROUSEL */
-.carousel-item-custom {
-  width: 30%;
-  margin: 0 1%;
-}
-
-.carousel-item-custom img {
-  width: 100%;
-}
-
+/* CAROUSEL 
 .carousel-caption {
   position: relative;
   right: 0%;
   left: 0%;
-}
+}*/
 
 h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
   color: #006fba;
@@ -95,7 +86,4 @@ h5:nth-child(2) a:hover {
   color: #006fba;
   }
 
-/*.carousel-inner .carousel-item {
-  display: block;
-  }*/
 </style>
