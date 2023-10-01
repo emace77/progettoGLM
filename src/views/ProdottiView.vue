@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <h1>I nostri prodotti</h1>
+  <h1>Elenco libri</h1>
   <div class="row">
     <div
       v-for="product in $store.state.products"

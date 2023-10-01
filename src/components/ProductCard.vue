@@ -10,13 +10,14 @@
       <router-link
         :to="{ name: 'dettaglio', params: { productId: productData.id } }"
         class="btn btn-primary"
-        >Dettagli</router-link
+        >Trama</router-link
       >
     </div>
   </div>
 </template>
 <!-- eslint-disable -->
 <script>
+/* eslint-disable */
 export default {
   props: {
     productData: {

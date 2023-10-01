@@ -28,7 +28,7 @@
         </span>
       </button>
       <a class="navbar-brand" href="#"
-        ><img src="../assets/bookvue_white.png" alt="logo bookshop" />
+        ><img src="../assets/images/bookvue_white.png" alt="logo bookshop" />
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">

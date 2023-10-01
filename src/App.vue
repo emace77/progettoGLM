@@ -35,6 +35,8 @@ export default {
 
 <style>
 /* eslint-disable */
+
+/* GENERALI */
 .giustificato {
   text-align: justify;
 }
@@ -43,6 +45,7 @@ export default {
   text-align: center;
 }
 
+/* COLORI */
 .blue {
   background-color: #006fba;
   color: #fff;
@@ -55,6 +58,7 @@ export default {
   color: #ddd;
 }
 
+/* NAV */
 .navbar-brand img {
   width: 200px;
 }
@@ -65,5 +69,43 @@ export default {
 .navbar-toggler:focus {
   background-color: #00aeef;
   box-shadow: none;
+}
+
+/* CAROUSEL */
+.carousel {
+  background-color: #eee;
+}
+.carousel-item img {
+  width: 30%;
+  margin-left: 15%;
+
+}
+.carousel-caption {
+  top: 1%;
+  right: auto;
+  left: 50%;
+  width: 40%;
+}
+.carousel-caption p {
+  color: #000;
+}
+.carousel-caption h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
+  color: #006fba;
+  text-decoration: none;
+  }
+.carousel-caption h5:nth-child(2) a:hover {
+  color: #006fba;
+  }
+.carousel-indicators {
+  bottom: -10%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #444;
+}
+.carousel-control-prev-icon {
+    background-image: url(assets/images/caret-left.svg);
+}
+.carousel-control-next-icon {
+    background-image: url(assets/images/caret-right.svg);
 }
 </style>
