@@ -1,12 +1,12 @@
 <!-- eslint-disable -->
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row blue">
       <div class="col">
         <NavBar></NavBar>
       </div>
     </div>
-    <div class="row">
+    <div class="row  px-5 px-5">
       <div class="col-md-9 col-sm-12">
         <router-view />
       </div>
@@ -58,6 +58,11 @@ export default {
   color: #ddd;
 }
 
+.blue-light {
+  background-color: #b2d4ea;
+  color: #02548b;
+}
+
 /* NAV */
 .navbar-brand img {
   width: 200px;
@@ -84,7 +89,7 @@ export default {
   top: 1%;
   right: auto;
   left: 50%;
-  width: 40%;
+  width: 35%;
 }
 .carousel-caption p {
   color: #000;
