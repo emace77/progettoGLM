@@ -6,21 +6,24 @@ export default createStore({
     cards: [
       {
         id: 1,
-        title: "Feltrinelli -10%",
-        image: "scuola.png",
-        text: "Tutti i libri della collana Classici con sconto del 10% fino al 31/10/2023",
+        title: "Tutti a scuola!",
+        image: "/images/scuola.png",
+        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20€",
+        alt: "Immagine di Freepik",
       },
       {
         id: 2,
-        title: "Tutti a scuola!",
-        image: "../assets/images/scuola.png",
-        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20€",
+        title: "Book Quiz",
+        image: "/images/concorso.png",
+        text: "Rispondi a 10 domande e vinci il tuo libro preferito",
+        alt: "Immagine di Freepik",
       },
       {
         id: 3,
         title: "Libri usati",
-        image: "https://picsum.photos/200/100?random=4",
+        image: "/images/usato.png",
         text: "Pagine che hanno ancora tanto da dire. Dai una nuova vita a un libro usato e risparmia",
+        alt: "Immagine di Freepik",
       },
     ],
     products: [
