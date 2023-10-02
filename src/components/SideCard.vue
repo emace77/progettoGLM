@@ -10,7 +10,7 @@
     </div>
   </div>
 </template>
-
+<!-- eslint-disable -->
 <script>
 /* eslint-disable */
 export default {
