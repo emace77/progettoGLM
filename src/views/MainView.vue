@@ -27,12 +27,45 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-          <div
-            v-for="product in $store.state.products"
-            :key="product.id"
-            :class="{ 'carousel-item active' : (product.id=1), 'carousel-item' : (product.id >= 1) }"
-          >
-            <ProductCarousel :productData="product"></ProductCarousel>
+          <div class="carousel-item active">
+            <a href="#"><img src="../assets/images/img1.png" class="d-block" alt="test"></a>
+            <div class="carousel-caption text-start">
+              <h5 class="fs-4"><a href="#">Maria Rossi</a></h5>
+              <h5 class="fs-3"><a href="#">Titolo libro 1</a></h5>
+              <p>13.00 €</p>
+              <p class="d-none d-xl-block">Violette Toussaint è guardiana di un cimitero di una cittadina della Borgogna. Ricorda un po' Renée, la protagonista dell'Eleganza del riccio, perché come lei nasconde dietro un'apparenza sciatta una grande personalità e una vita piena di misteri. Durante le visite tante persone si avvicinano a questa donna generosa.</p>
+              <a href="#" class="btn btn-primary">Dettagli</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="../assets/images/img2.png" class="d-block" alt="test"></a>
+            <div class="carousel-caption text-start">
+              <h5><a href="#">Rita Verdi</a></h5>
+              <h5><a href="#">Titolo libro 2</a></h5>
+              <p>18.00 €</p>
+              <p class="d-none d-xl-block">Violette Toussaint è guardiana di un cimitero di una cittadina della Borgogna. Ricorda un po' Renée, la protagonista dell'Eleganza del riccio, perché come lei nasconde dietro un'apparenza sciatta una grande personalità e una vita piena di misteri. Durante le visite.</p>
+              <a href="#" class="btn btn-primary">Dettagli</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="../assets/images/img3.png" class="d-block" alt="test"></a>
+            <div class="carousel-caption text-start">
+              <h5><a href="#">Antonio Bianchi</a></h5>
+              <h5><a href="#">Titolo libro 3</a></h5>
+              <p>16.00 €</p>
+              <p class="d-none d-xl-block">Violette Toussaint è guardiana di un cimitero di una cittadina della Borgogna. Ricorda un po' Renée, la protagonista dell'Eleganza del riccio, perché come lei nasconde dietro un'apparenza sciatta una grande personalità e una vita piena di misteri. Durante le visite.</p>
+              <a href="#" class="btn btn-primary">Dettagli</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="../assets/images/img1.png" class="d-block" alt="test"></a>
+            <div class="carousel-caption text-start">
+              <h5 class="fs-4"><a href="#">Gianni Neri</a></h5>
+              <h5 class="fs-3"><a href="#">Titolo libro 4</a></h5>
+              <p>15.50 €</p>
+              <p class="d-none d-xl-block">Violette Toussaint è guardiana di un cimitero di una cittadina della Borgogna. Ricorda un po' Renée, la protagonista dell'Eleganza del riccio, perché come lei nasconde dietro un'apparenza sciatta una grande personalità e una vita piena di misteri. Durante le visite.</p>
+              <a href="#" class="btn btn-primary">Dettagli</a>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -58,14 +91,3 @@
   </div>
   </div>
 </template>
-<!-- eslint-disable -->
-<script>
-/* eslint-disable */
-import ProductCarousel from "@/components/ProductCarousel.vue";
-
-export default {
-  components: {
-    ProductCarousel,
-  },
-};
-</script>
