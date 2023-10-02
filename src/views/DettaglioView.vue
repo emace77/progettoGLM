@@ -28,6 +28,7 @@
                 <hr class="my-1 text-secondary">
                 <div>
                   <h6 class="text-price fs-6-xl">4,90€</h6>
+                  <button class="btn btn-primary" v-on:click="addToCart">Aggiungi</button>
                 </div>
               </div>
             </div>
