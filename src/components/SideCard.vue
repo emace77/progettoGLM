@@ -1,6 +1,7 @@
+<!-- eslint-disable -->
 <template>
-  <div class="card mx-auto mb-2" style="width: 12rem">
-    <img :src="cardData.image" class="card-img-top" />
+  <div class="card mx-auto mb-4">
+    <img :src="cardData.image" class="card-img-top" :alt="cardData.alt" />
     <div class="card-body">
       <h5 class="card-title">{{ cardData.title }}</h5>
       <p class="card-text">
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   props: {
     cardData: {

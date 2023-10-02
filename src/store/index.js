@@ -6,21 +6,24 @@ export default createStore({
     cards: [
       {
         id: 1,
-        title: "Titolo#1",
-        image: "https://picsum.photos/200/100?random=3",
-        text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
+        title: "Tutti a scuola!",
+        image: "/images/scuola.png",
+        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20€",
+        alt: "Immagine di Freepik",
       },
       {
         id: 2,
-        title: "Titolo#2",
-        image: "https://picsum.photos/200/100?random=12",
-        text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
+        title: "Book Quiz",
+        image: "/images/concorso.png",
+        text: "Rispondi a 10 domande e vinci il tuo libro preferito",
+        alt: "Immagine di Freepik",
       },
       {
         id: 3,
-        title: "Titolo#3",
-        image: "https://picsum.photos/200/100?random=4",
-        text: "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
+        title: "Libri usati",
+        image: "/images/usato.png",
+        text: "Pagine che hanno ancora tanto da dire. Dai una nuova vita a un libro usato e risparmia",
+        alt: "Immagine di Freepik",
       },
     ],
     products: [
