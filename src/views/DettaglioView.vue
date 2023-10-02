@@ -15,7 +15,7 @@
               <div class="card-body d-flex flex-column py-0">
                 <div>
                   <p class="fs-7 m-0">Franco Forte</p>
-                  <h1 class="text-main fs-4 ">{{$route.params.productId}}</h1>
+                  <h1 class="text-main fs-4">{{$route.params.productId}}</h1>
                 </div>
                 <div>
                   <p class="fs-7 m-0"><span class="fw-bold">Editore:</span> Crescere</p>
