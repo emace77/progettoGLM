@@ -12,7 +12,7 @@
         class="btn btn-blu"
         >Trama</router-link
       >
-      <p class="txt_prezzo">Prezzo: {{ productData.price }}</p>
+      <p class="txt_prezzo mt-4">Prezzo: {{ productData.price }}</p>
     </div>
   </div>
 </template>
@@ -40,6 +40,9 @@ export default {
 }
 .card-title{
   color:#006fba;
+}
+.txt_prezzo{
+  font-weight: 500;
 }
 
 </style>
