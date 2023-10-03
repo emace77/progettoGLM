@@ -29,8 +29,8 @@
     </div>
   </template>
 <!-- eslint-disable -->
-  <script>
-  /* eslint-disable */
+<script>
+/* eslint-disable */
   export default {
     props: {
       productData: {
