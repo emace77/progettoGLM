@@ -7,7 +7,7 @@
     :key="card.id"
   ></SideCard>
 </template>
-
+<!-- eslint-disable -->
 <script>
 /* eslint-disable */
 import SideCard from "@/components/SideCard.vue";
