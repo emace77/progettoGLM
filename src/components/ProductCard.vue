@@ -12,6 +12,7 @@
         class="btn btn-blu"
         >Trama</router-link
       >
+      <p class="txt_prezzo">{{ productData.price }}</p>
     </div>
   </div>
 </template>
