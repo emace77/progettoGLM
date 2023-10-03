@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import MainView from "../views/MainView.vue";
 import ProdottiView from "../views/ProdottiView.vue";
 import DettaglioView from "../views/DettaglioView.vue";
+import CardView from "../views/CardView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
     path: "/prodotti/:productId",
     name: "dettaglio",
     component: DettaglioView,
+  },
+  {
+    path: "/promo/:cardId",
+    name: "promo",
+    component: CardView,
   },
   {
     path: "/:catchAll(.*)",
