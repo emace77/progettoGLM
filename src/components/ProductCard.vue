@@ -12,7 +12,7 @@
         class="btn btn-blu"
         >Trama</router-link
       >
-      <p class="txt_prezzo mt-4">Prezzo: {{ productData.price }}   Autore: {{ productData.author }}</p>
+      <p class="txt_prezzo mt-4">Prezzo: {{ productData.price }} <br>  Autore: {{ productData.author }}</p>
     </div>
   </div>
 </template>
