@@ -116,12 +116,9 @@ h1 {
 .carousel-caption p {
   color: #000;
 }
-.carousel-caption h5:nth-child(1) a:link, h5:nth-child(1) a:visited, h5:nth-child(1) a:active {
+.carousel-caption h5:nth-child(1) {
   color: #9e5c00;
   text-decoration: none;
-  }
-.carousel-caption h5:nth-child(1) a:hover {
-  color: #9e5c00;
   }
 .carousel-caption h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
   color: #006fba;
