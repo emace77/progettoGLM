@@ -22,9 +22,10 @@ const routes = [
     component: DettaglioView,
   },
   {
-    path: "/promo/:cardId",
-    name: "promo",
+    path: "/card/:cardId",
+    name: "card",
     component: CardView,
+    props: true,
   },
   {
     path: "/:catchAll(.*)",

@@ -5,7 +5,7 @@
     <div class="card-body">
       <h5>
         <router-link
-        :to="{ name: 'promo', params: { cardId: cardData.id } }"
+        :to="{ name: 'card', params: { cardId: cardData.id } }"
         >{{ cardData.title }}</router-link
       >
       </h5>

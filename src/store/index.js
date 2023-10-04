@@ -9,7 +9,7 @@ export default createStore({
         title: "Tutti a scuola!",
         image: "/images/scuola.png",
         alt: "Immagine di Freepik",
-        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20€",
+        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20 euro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
       },
       {
