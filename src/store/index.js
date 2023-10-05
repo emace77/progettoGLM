@@ -3,7 +3,6 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    test: "ciao, sono test",
     cards: [
       {
         id: 1,
