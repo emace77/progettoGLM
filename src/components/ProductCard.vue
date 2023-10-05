@@ -13,6 +13,9 @@
         >Trama</router-link
       >
       <p class="txt_prezzo mt-4">Prezzo: {{ productData.price }} <br>  Autore: {{ productData.author }}</p>
+      <p v-if="productData.inventory > 10">Disponibile</p>
+      <p v-else-if="productData.inventory > 0">In esaurimento</p>
+      <p v-else>Non disponibile</p>
     </div>
   </div>
 </template>
@@ -25,9 +28,17 @@ export default {
       type: Object,
       required: true,
     },
+    inventory: {
+      type: Number,
+      default: 0,
+    },
   },
 };
+
 </script>
+
+
+
 
 <style>
 .btn-blu{
