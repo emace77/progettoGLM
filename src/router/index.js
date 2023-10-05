@@ -6,6 +6,7 @@ import DettaglioView from "../views/DettaglioView.vue";
 import CardView from "../views/CardView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import CartPage from "../views/CartPage.vue";
+import LogPage from "../views/LogPage.vue";
 
 
 const routes = [
@@ -34,6 +35,11 @@ const routes = [
     path: "/carrello", // <-- Aggiungi questa rotta
     name: "carrello",
     component: CartPage
+  },
+  {
+    path: "/login", 
+    name: "login",
+    component: LogPage
   },
   {
     path: "/:catchAll(.*)",
