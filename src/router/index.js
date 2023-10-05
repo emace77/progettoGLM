@@ -1,9 +1,12 @@
+/* eslint-disable */
 import { createRouter, createWebHashHistory } from "vue-router";
 import MainView from "../views/MainView.vue";
 import ProdottiView from "../views/ProdottiView.vue";
 import DettaglioView from "../views/DettaglioView.vue";
 import CardView from "../views/CardView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
+import CartPage from "../views/CartPage.vue";
+
 
 const routes = [
   {
@@ -26,6 +29,11 @@ const routes = [
     name: "card",
     component: CardView,
     props: true,
+  },
+  {
+    path: "/carrello", // <-- Aggiungi questa rotta
+    name: "carrello",
+    component: CartPage
   },
   {
     path: "/:catchAll(.*)",
