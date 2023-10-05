@@ -1,15 +1,20 @@
 <!-- eslint-disable -->
 <template>
-  <h1>{{$store.state.cards[$route.params.cardId -1].title}}</h1>     
-  <img :src="$store.state.cards[$route.params.cardId - 1].image" class="card-img-top" :alt="$store.state.cards[$route.params.cardId - 1].title">
-  <h2>{{$store.state.cards[$route.params.cardId -1].text}}</h2>
-  <p>{{$store.state.cards[$route.params.cardId -1].description}}</p>
+  <h1>{{ $route.params.cardTitle }}</h1>     
+  <img :src="$route.params.cardImage" class="card-img-top" :alt="$route.params.cardAlt">
+  <h2>{{ $route.params.cardText }}</h2>
+  <p>{{ $route.params.cardDescription }}</p>
 </template>
 <!-- eslint-disable -->
 <script>
 /* eslint-disable */
 export default {
-  props: {},
+  props: {
+    cardData: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>
   

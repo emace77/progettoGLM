@@ -10,7 +10,6 @@
 import SideDetail from "@/components/SideDetail.vue";
 
 export default {
-  props: {},
   components: {
     SideDetail,
   },
