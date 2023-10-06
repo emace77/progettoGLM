@@ -117,7 +117,7 @@ h1 {
   color: #000;
 }
 
-h5 a:link, h5 a:link, h5 a:link {
+h5 a:link, h5 a:active, h5 a:visited {
   color: #006fba;
   text-decoration: none;
 }
