@@ -25,7 +25,6 @@ export default {
   methods: {
     showCard(card) {
       this.$store.commit('selectCard', card); // modifico il valore di card nello store
-      //this.$router.push('/dettaglio');  non serve
     },
   },
 };
