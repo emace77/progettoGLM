@@ -91,12 +91,26 @@ export default createStore({
         cart:0,
       },
     ],
+    // per contenere gli articoli che verranno aggiunti:
+    cart:[],
   },
-  getters: {},
+  //serve per ottenere gli articoli che sono stati aggiunti al carrello
+  getters: {
+    cartItems: state => state.cart
+  },
   mutations: {
     // il valore di cardSelezionata è uguale al valore di card
     selezionaCard(state, card) {
       state.cardSelezionata = card;
+    },
+    //mutations per aggiungere prodotto al carrello
+    addToCart(state, product) {
+      let found = state.cart.find(item => item.id === product.id);
+      if (found) {
+        found.quantity++;
+      } else {
+        state.cart.push({ ...product, quantity: 1 });
+      }
     },
   },
   actions: {},
