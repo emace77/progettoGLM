@@ -116,16 +116,27 @@ h1 {
 .carousel-caption p {
   color: #000;
 }
+
+h5 a:link, h5 a:active, h5 a:visited {
+  color: #006fba;
+  text-decoration: none;
+}
+h5 a:hover {
+  color: #006fba;
+  text-decoration: underline;
+}
+
 .carousel-caption h5:nth-child(1) {
   color: #9e5c00;
   text-decoration: none;
   }
-.carousel-caption h5:nth-child(2) a:link, h5:nth-child(2) a:visited, h5:nth-child(2) a:active {
+.carousel-caption h5:nth-child(2) a:link, .carousel-caption h5:nth-child(2) a:visited, .carousel-caption h5:nth-child(2) a:active {
   color: #006fba;
   text-decoration: none;
   }
 .carousel-caption h5:nth-child(2) a:hover {
   color: #006fba;
+  text-decoration: underline;
   }
 .carousel-indicators {
   bottom: -7%;
