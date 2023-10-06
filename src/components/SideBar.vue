@@ -1,7 +1,7 @@
 <!-- eslint-disable -->
 <template>
-  <div v-for="card in cards" :key="card.id">
-    <img :src="card.image" class="card-img-top" :alt="card.alt" />
+  <div class="sidebar mb-5" v-for="card in cards" :key="card.id">
+    <img :src="card.image" class="card-img-top mb-2" :alt="card.alt" />
     <h5>
       <!-- con l'evento @click invoco mostraDettaglio -->
       <router-link :key="card.id" :to="'/card/' + card.id" @click="showCard(card)">
