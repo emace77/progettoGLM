@@ -112,6 +112,12 @@ export default createStore({
         state.cart.push({ ...product, quantity: 1 });
       }
     },
+    //mutation per azzerare il carrello
+    AZZERA_CARRELLO(state) {
+      state.products.forEach(product => {
+        product.cart = 0;
+      });
+    },
   },
   actions: {},
   modules: {},

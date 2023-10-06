@@ -43,7 +43,6 @@
       addToCart() {
         // aggiungere il prodotto al carrello qui
         this.productData.cart= this.productData.cart+1;
-        // this.productData.inventory= this.productData.inventory-1;
         //esegue mutation sul vue store al posto di modificare il dato del prodotto direttamente
         this.$store.commit('addToCart', this.productData);
       this.productData.inventory--;
