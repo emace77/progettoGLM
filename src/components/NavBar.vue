@@ -39,7 +39,7 @@
           </li>
           <li class="nav-item">
             <router-link :to="{ name: 'prodotti' }" class="nav-link"
-              >Prodotti</router-link
+              >Libri</router-link
             >
           </li>
         </ul>
