@@ -1,11 +1,13 @@
 <!-- eslint-disable -->
 <template>
   <div v-if="cardSelezionata">
-    <h2>{{ cardSelezionata.titolo }}</h2>
-    <p>{{ cardSelezionata.descrizione }}</p>
+    <h1>{{ cardSelezionata.title }}</h1>
+    <img :src="cardSelezionata.image" class="w-75" :alt="cardSelezionata.alt">
+    <h2>{{ cardSelezionata.text }}</h2>
+    <p>{{ cardSelezionata.description }}</p>
   </div>
   <div v-else>
-    <p>Seleziona una card dalla lista a sinistra.</p>
+    <p>La promozione selezionata non è disponibile.</p>
   </div>
 </template>
 <!-- eslint-disable -->

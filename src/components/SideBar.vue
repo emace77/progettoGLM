@@ -2,8 +2,8 @@
 <template>
   <div>
     <!-- con l'evento @click invoco mostraDettaglio -->
-    <router-link v-for="card in cards" :key="card.id" :to="'/dettaglio/' + card.id" @click="mostraDettaglio(card)">
-      {{ card.titolo }}<br>
+    <router-link v-for="card in cards" :key="card.id" :to="'/card/' + card.id" @click="mostraDettaglio(card)">
+      {{ card.title }}<br>
     </router-link>
   </div>
 </template>
