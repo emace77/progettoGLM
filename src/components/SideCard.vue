@@ -1,16 +1,16 @@
 <!-- eslint-disable -->
 <template>
   <div class="card mx-auto mb-4">
-    <img :src="cardData.image" class="card-img-top" :alt="cardData.alt" />
+    <img :src="cardSelected.image" class="w-75" :alt="cardSelected.alt">
     <div class="card-body">
       <h5>
         <router-link
         :to="'/card/' + cardData.id"
-        >{{ cardData.title }}</router-link
+        >{{ cardSelected.title }}</router-link
       >
       </h5>
       <p class="card-text">
-        {{ cardData.text }}
+        {{ cardSelected.text }}
       </p>
     </div>
   </div>
@@ -19,10 +19,15 @@
 <script>
 /* eslint-disable */
 export default {
-  props: {
-    cardData: {
-      type: Object,
-      required: true,
+  computed: {
+    cards() {
+      return this.$store.state.cards;
+    },
+  },
+  methods: {
+    showCard(card) {
+      this.$store.commit('selectCard', card); // modifico il valore di card nello store
+      //this.$router.push('/dettaglio');  non serve
     },
   },
 };
