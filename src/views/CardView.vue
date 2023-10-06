@@ -1,10 +1,10 @@
 <!-- eslint-disable -->
 <template>
-  <div v-if="cardSelezionata">
-    <h1>{{ cardSelezionata.title }}</h1>
-    <img :src="cardSelezionata.image" class="w-75" :alt="cardSelezionata.alt">
-    <h2>{{ cardSelezionata.text }}</h2>
-    <p>{{ cardSelezionata.description }}</p>
+  <div v-if="cardSelected">
+    <h1>{{ cardSelected.title }}</h1>
+    <img :src="cardSelected.image" class="w-75" :alt="cardSelected.alt">
+    <h2>{{ cardSelected.text }}</h2>
+    <p>{{ cardSelected.description }}</p>
   </div>
   <div v-else>
     <p>La promozione selezionata non è disponibile.</p>
@@ -15,8 +15,8 @@
 /* eslint-disable */
 export default {
   computed: {
-    cardSelezionata() {
-      return this.$store.state.cardSelezionata;
+    cardSelected() {
+      return this.$store.state.cardSelected;
     },
   },
 };
