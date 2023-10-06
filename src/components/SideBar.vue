@@ -1,20 +1,26 @@
 <!-- eslint-disable -->
 <template>
-  <h1 class="fs-4 text fw-bold">Promozioni</h1>
-  <SideCard
-    v-for="card in $store.state.cards"
-    :cardData="card"
-    :key="card.id"
-  ></SideCard>
+  <div>
+    <!-- con l'evento @click invoco mostraDettaglio -->
+    <router-link v-for="card in cards" :key="card.id" :to="'/dettaglio/' + card.id" @click="mostraDettaglio(card)">
+      {{ card.titolo }}<br>
+    </router-link>
+  </div>
 </template>
 <!-- eslint-disable -->
 <script>
 /* eslint-disable */
-import SideCard from "@/components/SideCard.vue";
-
 export default {
-  components: {
-    SideCard,
+  computed: {
+    cards() {
+      return this.$store.state.cards;
+    },
+  },
+  methods: {
+    mostraDettaglio(card) {
+      this.$store.commit('selezionaCard', card); // modifico il valore di card nello store
+      //this.$router.push('/dettaglio');  non serve
+    },
   },
 };
 </script>

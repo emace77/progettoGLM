@@ -4,31 +4,11 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     cards: [
-      {
-        id: 1,
-        title: "Tutti a scuola!",
-        image: "/images/scuola.png",
-        alt: "Immagine di Freepik",
-        text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20 euro",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
-      },
-      {
-        id: 2,
-        title: "Book Quiz",
-        image: "/images/concorso.png",
-        alt: "Immagine di Freepik",
-        text: "Rispondi a 10 domande e vinci il tuo libro preferito",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
-      },
-      {
-        id: 3,
-        title: "Libri usati",
-        image: "/images/usato.png",
-        alt: "Immagine di Freepik",
-        text: "Pagine che hanno ancora tanto da dire. Dai una nuova vita a un libro usato e risparmia",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
-      },
+      { id: 1, titolo: 'Card 1', descrizione: 'Descrizione della Card 1' },
+      { id: 2, titolo: 'Card 2', descrizione: 'Descrizione della Card 2' },
     ],
+    // inizializzo a null cardSelezionata
+    cardSelezionata: null,
     products: [
       {
         id: 1,
@@ -113,7 +93,12 @@ export default createStore({
     ],
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    // il valore di cardSelezionata è uguale al valore di card
+    selezionaCard(state, card) {
+      state.cardSelezionata = card;
+    },
+  },
   actions: {},
   modules: {},
 });

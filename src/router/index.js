@@ -26,7 +26,7 @@ const routes = [
     component: DettaglioView,
   },
   {
-    path: "/card/:cardId",
+    path: "/dettaglio/:cardId", // dettaglio era card
     name: "card",
     component: CardView,
     props: true,

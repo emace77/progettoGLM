@@ -4,6 +4,7 @@
   <img :src="$route.params.cardImage" class="card-img-top" :alt="$route.params.cardAlt">
   <h2>{{ $route.params.cardText }}</h2>
   <p>{{ $route.params.cardDescription }}</p>
+  <h1>{{ $store.state.cards[cardData.id].title }}</h1>
 </template>
 <!-- eslint-disable -->
 <script>

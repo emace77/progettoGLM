@@ -5,7 +5,7 @@
     <div class="card-body">
       <h5>
         <router-link
-        :to="{ name: 'card', params: { cardId: cardData.id, cardTitle: cardData.title, cardText: cardData.text, cardDescription: cardData.description, cardImage: cardData.image, cardAlt: cardData.alt } }"
+        :to="'/card/' + cardData.id"
         >{{ cardData.title }}</router-link
       >
       </h5>
