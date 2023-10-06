@@ -16,7 +16,7 @@
         </label>
       </div>
 
-      <button class="btn btn-sm btn-primary btn-block" type="submit">Entra</button>
+      <button class="btn btn-blu btn-sm btn-block" type="submit">Entra</button>
 
       <p>
         Non hai un account? <a href="#">Registrati qui</a> <br>
@@ -45,5 +45,14 @@
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
+}
+
+.btn-blu{
+  background-color:#006fba ;
+  color:#ffff;
+}
+.btn-blu:hover{
+  background-color:#00aeef ;
+  color:#ffff;
 }
 </style>
