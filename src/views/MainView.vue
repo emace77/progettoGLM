@@ -32,9 +32,7 @@
             class="carousel-item"
             :class="{ 'active': (product.id<=1)}"
           >
-            <router-link
-              :to="{ name: 'dettaglio', params: { productId: product.id } }"
-              >
+            <router-link :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
                 <img :src="product.image" class="d-block" alt="product.title"></router-link
             >
             <div class="carousel-caption text-start pt-0 pt-md-3">
@@ -42,10 +40,10 @@
                   {{ product.author }}
                 </h5>
                 <h5 class="fs-4">
-                  <router-link
-                  :to="{ name: 'dettaglio', params: { productId: product.id } }"
-                  >{{ product.title }}</router-link
-                >
+                  <router-link :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
+                    {{ product.title }}
+                    </router-link
+                  >
                 </h5>
                 <p>{{ product.price }} €</p>
                 <p class="d-none d-xl-block">{{ product.text }}</p>
