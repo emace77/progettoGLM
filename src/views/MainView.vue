@@ -24,14 +24,13 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div
             v-for="product in products"
             :key="product.id"
             class="carousel-item"
-            :class="{ 'active': (product.id<=1) }"
+            :class="{ 'active': (product.id<=1)}"
           >
             <a href="#"><img :src="product.image" class="d-block" alt="product.title"></a>
             <div class="carousel-caption text-start">
