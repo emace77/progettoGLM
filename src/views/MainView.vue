@@ -46,11 +46,9 @@
                 </h5>
                 <p>{{ product.price }} €</p>
                 <p class="d-none d-xl-block">{{ product.text }}</p>
-                <router-link
-                  :to="{ name: 'dettaglio', params: { productId: product.id } }"
-                  class="btn btn-primary"
-                  >Dettagli</router-link
-                >
+                <router-link class="btn btn-primary" :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
+                  dettagli
+                </router-link>
             </div>
           </div>
         </div>
