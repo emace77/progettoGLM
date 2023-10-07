@@ -27,7 +27,7 @@
         </div>
         <div class="carousel-inner">
           <div
-            v-for="product in products"
+            v-for="product in highlightedProducts"
             :key="product.id"
             class="carousel-item"
             :class="{ 'active': (product.id<=1)}"
@@ -82,6 +82,9 @@ export default {
     products() {
       return this.$store.state.products;
     },
+    highlightedProducts() {
+      return this.$store.state.products.filter(product => product.highlight === true); // mostra solo i products con highlight = true
+    }
   },
   methods: {
     showProduct(product) {
