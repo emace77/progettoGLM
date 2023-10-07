@@ -18,7 +18,7 @@
   </div>
   <div class="row mt-5">
     <div class="col">
-      <h1 class="display-6 fw-bold text-center">I libri più venduti</h1>
+      <h1 class="display-6 fw-bold text-center">Libri in evidenza</h1>
       <div id="carouselExampleCaptions" class="carousel slide p-4 mb-5 mb-sm-3">
         <div class="carousel-indicators d-none d-lg-flex">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
