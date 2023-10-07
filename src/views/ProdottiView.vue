@@ -8,9 +8,15 @@
       class="col-sm-12 col-md-4"
     >
       <div class="card mt-4">
-        <img :src="product.image" class="card-img-top" alt="Prodotto" />
+        <router-link :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
+          <img :src="product.image" class="card-img-top" alt="Prodotto" />
+        </router-link>
         <div class="card-body">
-          <h5 class="card-title">{{ product.title }}</h5>
+          <h5 class="card-title">
+            <router-link :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
+              {{ product.title }}
+            </router-link>
+          </h5>
           <p class="card-text">
             {{ product.text }}
           </p>
