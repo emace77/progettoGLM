@@ -28,12 +28,30 @@
         </div>
         <div class="carousel-inner">
           <div
-            v-for="product in $store.state.products"
+            v-for="product in products"
             :key="product.id"
             class="carousel-item"
             :class="{ 'active': (product.id<=1) }"
           >
-            <ProductCarousel :productData="product"></ProductCarousel>
+            <a href="#"><img :src="product.image" class="d-block" alt="product.title"></a>
+            <div class="carousel-caption text-start">
+                <h5 class="fs-4">
+                  {{ product.author }}
+                </h5>
+                <h5 class="fs-4">
+                  <router-link
+                  :to="{ name: 'dettaglio', params: { productId: product.id } }"
+                  >{{ product.title }}</router-link
+                >
+                </h5>
+                <p>{{ product.price }} €</p>
+                <p class="d-none d-xl-block">{{ product.text }}</p>
+                <router-link
+                  :to="{ name: 'dettaglio', params: { productId: product.id } }"
+                  class="btn btn-primary"
+                  >Dettagli</router-link
+                >
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -62,11 +80,16 @@
 <!-- eslint-disable -->
 <script>
 /* eslint-disable */
-import ProductCarousel from "@/components/ProductCarousel.vue";
-
 export default {
-  components: {
-    ProductCarousel,
+  computed: {
+    products() {
+      return this.$store.state.products;
+    },
+  },
+  methods: {
+    showProduct(product) {
+      this.$store.commit('selectProduct', product); 
+    },
   },
 };
 </script>

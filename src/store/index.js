@@ -112,6 +112,7 @@ export default createStore({
         cart:0,
       },
     ],
+    productSelected: null, // inizializzo a null cardSelected
     // per contenere gli articoli che verranno aggiunti:
     cart:[],
   },
@@ -123,6 +124,9 @@ export default createStore({
     // il valore di cardSelected è uguale al valore di card
     selectCard(state, card) {
       state.cardSelected = card;
+    },
+    selectProduct(state, product) {
+      state.productSelected = product;
     },
     //mutations per aggiungere prodotto al carrello
     addToCart(state, product) {
