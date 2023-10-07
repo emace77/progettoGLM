@@ -9,16 +9,18 @@
         <LogCart></LogCart>
       </div>
     </div>
-    <div class="row px-5 py-3">
-      <div class="col-md-9 col-sm-12">
+    <div class="row px-lg-5 py-lg-4 py-2 px-3">
+      <div class="col-lg-9 col-md-12 pe-lg-4 pe-0">
         <router-view />
       </div>
-      <div class="col-md-3 d-none d-md-block px-05">
+      <div class="col-lg-3 col-md-12 px-sm-05">
         <SideBar></SideBar>
       </div>
     </div>
     <div class="row blue">
-      <div class="col"><FooterBar></FooterBar></div>
+      <div class="col">
+        <FooterBar></FooterBar>
+      </div>
     </div>
   </div>
 </template>
@@ -103,14 +105,14 @@ h1 {
 }
 .carousel-item img {
   width: 30%;
-  margin-left: 15%;
+  margin-left: 10%;
 
 }
 .carousel-caption {
   top: 1%;
   right: auto;
-  left: 50%;
-  width: 35%;
+  left: 45%;
+  width: 45%;
 }
 .carousel-caption p {
   color: #000;

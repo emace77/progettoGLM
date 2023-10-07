@@ -1,9 +1,12 @@
 <!-- eslint-disable -->
 <template>
+  <h2 class="text-center text-md-start">Promozioni</h2>
   <div class="sidebar mb-5" 
   v-for="card in cards" 
   :key="card.id">
-    <img :src="card.image" class="card-img-top mb-2" :alt="card.alt" />
+    <router-link :key="card.id" :to="'/card/' + card.id" @click="showCard(card)">
+      <img :src="card.image" class="card-img-top mb-2" :alt="card.alt" />
+    </router-link>
     <h5>
       <!-- con l'evento @click invoco mostraDettaglio -->
       <router-link :key="card.id" :to="'/card/' + card.id" @click="showCard(card)">

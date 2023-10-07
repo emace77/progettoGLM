@@ -27,10 +27,10 @@
           </svg>
         </span>
       </button>
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand me-0" href="#"
         ><img src="../assets/images/bookvue_white.png" alt="logo bookshop" />
       </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <router-link :to="{ name: 'home' }" class="nav-link"

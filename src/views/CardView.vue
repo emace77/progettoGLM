@@ -3,7 +3,7 @@
   <div v-if="cardSelected">
     <h1>{{ cardSelected.title }}</h1>
     <img :src="cardSelected.image" class="w-75" :alt="cardSelected.alt">
-    <h2>{{ cardSelected.text }}</h2>
+    <h2 class="text-start">{{ cardSelected.text }}</h2>
     <p>{{ cardSelected.description }}</p>
   </div>
   <div v-else>

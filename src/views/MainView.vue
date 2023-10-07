@@ -19,7 +19,7 @@
   <div class="row mt-5">
     <div class="col">
       <h1 class="display-6 fw-bold text-center">Libri in evidenza</h1>
-      <div id="carouselExampleCaptions" class="carousel slide p-4 mb-5 mb-sm-3">
+      <div id="carouselExampleCaptions" class="carousel slide p-3 mb-5 mb-sm-3">
         <div class="carousel-indicators d-none d-lg-flex">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -32,8 +32,12 @@
             class="carousel-item"
             :class="{ 'active': (product.id<=1)}"
           >
-            <a href="#"><img :src="product.image" class="d-block" alt="product.title"></a>
-            <div class="carousel-caption text-start">
+            <router-link
+              :to="{ name: 'dettaglio', params: { productId: product.id } }"
+              >
+                <img :src="product.image" class="d-block" alt="product.title"></router-link
+            >
+            <div class="carousel-caption text-start pt-0 pt-md-3">
                 <h5 class="fs-4">
                   {{ product.author }}
                 </h5>
@@ -45,7 +49,7 @@
                 </h5>
                 <p>{{ product.price }} €</p>
                 <p class="d-none d-xl-block">{{ product.text }}</p>
-                <router-link class="btn btn-primary" :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
+                <router-link class="btn btn-primary d-none d-md-inline" :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
                   dettagli
                 </router-link>
             </div>
