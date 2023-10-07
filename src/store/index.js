@@ -117,9 +117,10 @@ export default createStore({
         highlight: false,
       },
     ],
-    productSelected: null, // inizializzo a null cardSelected
+    productSelected: null, 
     // per contenere gli articoli che verranno aggiunti:
     cart:[],
+    cartGlobal: 0,
   },
   //serve per ottenere gli articoli che sono stati aggiunti al carrello
   getters: {

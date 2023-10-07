@@ -64,6 +64,9 @@ export default {
     productSelected() {
       return this.$store.state.productSelected;
     },
+    cartGlobal() {
+      return this.$store.state.cartGlobal;
+    },
   },
   methods: {
       addToCart() {
@@ -72,6 +75,7 @@ export default {
         //esegue mutation sul vue store al posto di modificare il dato del prodotto direttamente
         this.$store.commit('addToCart', this.productSelected);
         this.productSelected.inventory--;
+        this.$store.state.cartGlobal++;
       },
     },
 };
