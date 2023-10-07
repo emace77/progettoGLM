@@ -5,7 +5,7 @@
       <div class="col-9">
         <NavBar></NavBar>
       </div>
-      <div class="col-3">
+      <div class="col-3 ps-0 pe-1">
         <LogCart></LogCart>
       </div>
     </div>
@@ -80,6 +80,10 @@ h1 {
   background-color: #b2d4ea;
   color: #02548b;
 }
+
+.orange {
+  color: #9e5c00;
+  }
 
 .btn-primary 
 {
