@@ -5,9 +5,7 @@
       <div class="col-lg-10">
         <div class="card bg-transparent p-xl-3 border-0 mb-3">
           <div class="row g-0">
-            <p>
-              <router-link class="btn btn-primary" :to="{ name: 'prodotti' }">Torna al catalogo</router-link>
-            </p>
+            <router-link class="btn btn-primary w-auto" :to="{ name: 'prodotti' }">Torna al catalogo</router-link>
             <div v-if="productSelected">
               <div class="col-lg-5 mb-4 mb-xl-0">
                 <img :src="productSelected.image" class="w-100 rounded" :alt="productSelected.title" />

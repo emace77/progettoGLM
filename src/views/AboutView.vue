@@ -1,0 +1,8 @@
+<!-- eslint-disable -->
+<template>
+    <h1>Come funziona il nostro servizio</h1>
+    <img src="../assets/images/hero.png" class="d-block mx-lg-auto img-fluid" alt="Image by pch.vector on Freepik" loading="lazy">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tempor tortor, sit amet sodales nulla. Vivamus posuere gravida mauris vel pretium. Phasellus faucibus turpis arcu, eu facilisis tellus convallis vitae. Mauris venenatis sagittis nisi, a commodo massa tincidunt nec. Suspendisse potenti. Nunc augue quam, tincidunt a laoreet consectetur, facilisis at felis. Cras interdum scelerisque eros, eu aliquam odio mollis ut.</p>
+    <p>Donec consequat volutpat felis, non congue quam facilisis id. Praesent pharetra metus augue, in mollis nibh ullamcorper eget. Suspendisse volutpat massa ligula. Pellentesque consequat finibus enim, et euismod nulla iaculis quis. Vestibulum quis gravida lorem. Cras in feugiat lectus. Duis ex est, rutrum eget suscipit at, posuere accumsan eros. Aliquam hendrerit pulvinar diam sed rutrum. Duis at tellus lacinia, lobortis lectus a, mollis ipsum. Phasellus lacus purus, sagittis eget fermentum et, tempus commodo orci. Sed consectetur sed tellus imperdiet ullamcorper. Cras ac massa sit amet urna molestie condimentum ornare at nibh. Phasellus viverra finibus orci, vel viverra augue rutrum a. Phasellus lectus purus, hendrerit sed mi a, rhoncus ultricies massa. Vestibulum laoreet accumsan leo id rhoncus. Morbi condimentum, nunc quis feugiat porttitor, magna ligula fermentum tellus, vitae convallis neque risus a neque.</p>
+</template>
+<!-- eslint-disable -->

@@ -7,6 +7,7 @@ import CardView from "../views/CardView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import CartPage from "../views/CartPage.vue";
 import LogView from "../views/LogView.vue";
+import AboutView from "../views/AboutView.vue";
 
 
 const routes = [
@@ -26,7 +27,7 @@ const routes = [
     component: DettaglioView,
   },
   {
-    path: "/card/:cardId", // dettaglio era card
+    path: "/card/:cardId", 
     name: "card",
     component: CardView,
     props: true,
@@ -34,12 +35,17 @@ const routes = [
   {
     path: "/carrello", // <-- Aggiungi questa rotta
     name: "carrello",
-    component: CartPage
+    component: CartPage,
   },
   {
     path: "/login", 
     name: "login",
-    component: LogView
+    component: LogView,
+  },
+  {
+    path: "/about", 
+    name: "about",
+    component: AboutView,
   },
   {
     path: "/:catchAll(.*)",
