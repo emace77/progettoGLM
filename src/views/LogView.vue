@@ -4,20 +4,27 @@
   <div>
     <h2>Login</h2>
     <form class="form-signin mx-auto" @submit.prevent="onSubmit">
-      <label for="inputEmail" class="sr-only">Email</label>
-      <input id="inputEmail" type="email" class="form-control" placeholder="Email" v-model="email" required/>
+      <div class="form-outline">
+				<label for="inputEmail" class="sr-only">Email</label>
+				<div class="input-group">
+				<span class="icone_form align-items-center p-2 border rounded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006fba" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg></span>
+				<input id="inputEmail" type="email" class="form-control" v-model="email" required/> 
+				</div>
 
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input id="inputPassword" placeholder="Password" class="form-control" type="password" v-model="password" required />
+        <label for="inputPassword" class="sr-only">Password</label>
+				<div class="input-group">
+				<span class="icone_form align-items-center p-2 border rounded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#006fba" class="bi bi-lock-fill" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg></span>
+				<input id="inputPassword" type="password" class="form-control" v-model="password" required/> 
+				</div>
+			</div>
 
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" v-model="remember"> Ricordami
         </label>
       </div>
-
-      <button class="btn btn-blu btn-sm btn-block" type="submit">Entra</button>
-
+      <button class="btn btn-blu btn-lg btn-block btn-entra text-center mb-3" type="submit">Entra</button>
+      
       <!-- Messaggio registrazione avvenuta con successo -->
       <p v-if="accesso">{{ accesso }}</p>
 
@@ -81,7 +88,10 @@ export default {
   max-width: 330px;
   padding: 15px;
 }
-
+.icone_form {
+  display: flex;
+	background-color: #f8f9fa;
+}
 .btn-blu {
   background-color: #006fba;
   color: #ffff;
@@ -90,6 +100,11 @@ export default {
 .btn-blu:hover {
   background-color: #00aeef;
   color: #ffff;
+}
+
+.btn-entra {
+  width: 300px;
+  height: 40px;
 }
 .errore {
   color: red;
