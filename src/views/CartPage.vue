@@ -6,10 +6,15 @@
       <h3>Prodotti selezionati:</h3>
       <!-- contenuto del tuo carrello -->
       <ul class="list-group">
-      <li class="list-group-item" v-for="item in cartItems" :key="item.id">
+      <!-- <li class="list-group-item" v-for="item in cartItems" :key="item.id">
 
        {{ item.title }} - Quantità: {{ item.quantity }} - Prezzo: {{ item.price }}€
-      </li>
+      </li> -->
+      <li class="list-group-item" v-for="item in cartItems" :key="item.id">
+        <span class="item-title">{{ item.title }}</span>
+        <span class="item-quantity">Quantità: {{ item.quantity }}</span>
+        <span class="item-price">Prezzo: {{ item.price }}€</span>
+    </li>
     </ul>
     <button type="button" class="btn btn-blu mt-4" @click="azzeraCarrello">Azzera carrello</button>
     <div class="row">
@@ -61,5 +66,17 @@ export default {
 .btn-blu:hover{
   background-color:#00aeef ;
   color:#ffff;
+}
+.item-title{
+  color: #006fba;
+  font-weight: 700;
+  margin-right: 1.5rem;
+}
+.item-quantity{
+  font-weight: 500;
+  margin-right: 1.5rem;
+}
+.item-price{
+  font-weight: 500;
 }
 </style>
