@@ -48,10 +48,6 @@
             >
           </li>
         </ul>
-        <form @submit.prevent="searchLibri">
-          <input v-model="searchQuery" placeholder="Cerca per ISBN" />
-        <button type="submit">Cerca</button>
-      </form>
       </div>
     </div>
   </nav>
@@ -59,16 +55,5 @@
 <!-- eslint-disable -->
 <script>
 /* eslint-disable */
-export default {
-  data() {
-    return {
-      searchQuery: "", // Inizializza la query di ricerca come stringa vuota
-    };
-  },
-  methods: {
-    searchLibri(){
-      this.$router.push({ name: "dettaglio", params: { productId: this.searchQuery } });
-    },
-  },
-};
+export default {};
 </script>
