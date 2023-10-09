@@ -48,6 +48,7 @@ export default createStore({
         inventory: 3,
         cart:0,
         highlight: true,
+        reviews: [], 
       },
       {
         id: 2,
@@ -66,6 +67,7 @@ export default createStore({
         inventory: 0,
         cart:0,
         highlight: false,
+        reviews: [], 
       },
       {
         id: 3,
@@ -84,6 +86,7 @@ export default createStore({
         inventory: 15,
         cart:0,
         highlight: true,
+        reviews: [], 
       },
       {
         id: 4,
@@ -102,6 +105,7 @@ export default createStore({
         inventory: 11,
         cart:0,
         highlight: true,
+        reviews: [], 
       },
       {
         id: 5,
@@ -120,6 +124,7 @@ export default createStore({
         inventory: 4,
         cart:0,
         highlight: false,
+        reviews: [], 
       },
     ],
     productSelected: null, 
