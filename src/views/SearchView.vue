@@ -81,7 +81,7 @@ export default {
       this.searchResults = this.products.filter(product => { 
         return SearchKey.test(product.publisher); 
       });
-      this.searchMsg = 'Hai cercato: ' + this.searchTermPublisher;
+      this.searchMsg = this.searchTermPublisher;
       this.searchTermPublisher = '';
       this.nResults = this.searchResults.length;
     },
@@ -91,7 +91,7 @@ export default {
       this.searchResults = this.products.filter(product => { 
         return SearchKey.test(product.isbn); 
       });
-      this.searchMsg = 'Hai cercato: ' + this.searchTermIsbn;
+      this.searchMsg = this.searchTermIsbn;
       this.searchTermIsbn = '';
       this.nResults = this.searchResults.length;
     }
