@@ -45,16 +45,8 @@ export default {
 /* eslint-disable */
 
 /* GENERALI */
-h1 {
+h1, label {
   color: #006fba;
-}
-
-.giustificato {
-  text-align: justify;
-}
-
-.centrato {
-  text-align: center;
 }
 
 .px-05 {
@@ -62,6 +54,9 @@ h1 {
   padding-left: 3rem !important;
 }
 
+.text-small {
+  font-size: 0.8rem;
+}
 
 /* COLORI */
 .blue {

@@ -23,11 +23,13 @@
           <router-link class="btn btn-primary" :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
             dettagli
           </router-link>
-          <p class="txt_prezzo mt-4">Prezzo: {{ product.price }} <br>  Autore: {{ product.author }}</p>
+          <p class="txt_prezzo mt-4">
+            <span class="fw-bold">Prezzo:</span> {{ product.price }}<br>
+            <span class="fw-bold">Autore:</span> {{ product.author }}</p>
           <!-- per chart -->
-          <p v-if="product.inventory > 10">Disponibile</p>
-          <p v-else-if="product.inventory > 0">In esaurimento</p>
-          <p v-else>Non disponibile</p>
+          <p class="fst-italic" v-if="product.inventory > 10">Disponibile</p>
+          <p class="fst-italic" v-else-if="product.inventory > 0">In esaurimento</p>
+          <p class="fst-italic" v-else>Non disponibile</p>
         </div>
       </div>
     </div>
