@@ -52,9 +52,10 @@
               >Come funziona</router-link
             >
           </li>
-          <li>
-            <input v-model="searchQuery" type="text" placeholder="Cerca per titolo o autore" />
-            <button @click="search">Cerca</button>
+          <li class="ms-5">
+            <label for="searchNav" class="form-label d-none">Inserisci il titolo o l'autore</label>
+            <input v-model="searchQuery" id="searchNav" class="form-control w-50 d-inline" type="text" placeholder="Cerca per titolo o autore" />
+            <button @click="search" class="btn btn-light">Cerca</button>
           </li>
         </ul>
       </div>
