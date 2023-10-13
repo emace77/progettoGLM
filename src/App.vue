@@ -2,10 +2,10 @@
 <template>
   <div class="container-fluid">
     <div class="row blue">
-      <div class="col-9">
+      <div class="col-10">
         <NavBar></NavBar>
       </div>
-      <div class="col-3 ps-0 pe-1">
+      <div class="col-2 ps-0 pe-1">
         <LogCart></LogCart>
       </div>
     </div>
@@ -153,5 +153,17 @@ h5 a:hover {
 }
 .carousel-control-next-icon {
     background-image: url(assets/images/caret-right.svg);
+}
+
+
+/* MEDIA QUERY */
+#searchNav {
+  width: 70%;
+}
+
+@media screen and (min-width: 992px) {
+#searchNav {
+  width: 50%;
+}
 }
 </style>
