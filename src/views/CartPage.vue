@@ -11,6 +11,7 @@
        {{ item.title }} - Quantità: {{ item.quantity }} - Prezzo: {{ item.price }}€
       </li> -->
       <li class="list-group-item" v-for="item in cartItems" :key="item.id">
+        <img :src="item.image" alt="Product Image" class="item-image">
         <span class="item-title">{{ item.title }}</span>
         <span class="item-quantity">Quantità: {{ item.quantity }}</span>
         <span class="item-price">Prezzo: {{ item.price }}€</span>
@@ -79,5 +80,10 @@ export default {
 }
 .item-price{
   font-weight: 500;
+}
+.item-image {
+  width: 220px;
+  height: 340px;
+  margin-right: 1rem;
 }
 </style>
