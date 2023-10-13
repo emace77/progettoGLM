@@ -156,6 +156,17 @@ export default createStore({
     //mutation per azzerare il carrello
     AZZERA_CARRELLO(state) {
       console.log("AZZERA_CARRELLO è stata chiamata.");
+
+      // Riporta ogni libro nel carrello alla sua quantità iniziale
+  state.cart.forEach(cartItem => {
+    let product = state.products.find(product => product.id === cartItem.id);
+    if (product) {
+      product.inventory += cartItem.quantity; // aggiungi la quantità del carrello all'inventario
+      product.cart = 0; // ripristina la quantità nel carrello a 0 per quel prodotto
+    }
+  });
+
+  // Svuota il carrello e azzera il cartGlobal
       state.cart = [];
       state.cartGlobal = 0;
   },
