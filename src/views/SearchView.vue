@@ -3,6 +3,54 @@
     <div class="row">
       <div class="col-12">
         <h1>Ricerca il tuo libro preferito</h1>
+        <!-- inizio accordion -->
+        <div class="accordion mt-3" id="accordionSearchs">
+          <div class="accordion-item">
+            <h2 class="accordion-header mt-0">
+              <button class="accordion-button fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Ricerca per titolo o autore
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <label for="search1" class="form-label d-none">Inserisci il titolo o l'autore</label>
+                <input v-model="searchTerm" id="search1" class="form-control w-50" placeholder="Inserisci il titolo o l'autore" aria-describedby="cerca" />
+                <button class="btn-primary mt-3 px-2 py-1" @click="search">Cerca</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header mt-0">
+              <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Ricerca per editore
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <label for="search2" class="form-label d-none">Inserisci l'editore</label>
+                <input v-model="searchTermPublisher" id="search2" class="form-control w-50" placeholder="Inserisci l'editore" aria-describedby="cerca per editore" />
+                <button class="btn-primary mt-3 px-2 py-1" @click="searchPublisher">Cerca</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header mt-0">
+              <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Ricerca per ISBN
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <label for="search3" class="form-label d-none">Inserisci il codice ISBN</label>
+                <input v-model="searchTermIsbn" id="search3" class="form-control w-50" placeholder="Inserisci il codice ISBN" aria-describedby="cerca per ISBN" />
+                <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fine accordion -->
+        
+        <!-- 
         <div>
           <label for="search1" class="form-label fw-bold fs-3">Ricerca per titolo o autore</label>
           <input v-model="searchTerm" id="search1" class="form-control w-50" placeholder="Cerca per titolo o autore" aria-describedby="cerca" />
@@ -17,7 +65,7 @@
           <label for="search3" class="form-label fw-bold fs-3">Ricerca per ISBN</label>
           <input v-model="searchTermIsbn" id="search3" class="form-control w-50" placeholder="Cerca per ISBN" aria-describedby="cerca per ISBN" />
           <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
-        </div>
+        </div>-->
         <div class="row mt-5">
           <hr v-if="nResults >= 0">
           <div class="col-4 pt-3" v-if="searchMsg !== ''">

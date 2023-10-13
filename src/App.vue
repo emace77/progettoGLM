@@ -76,6 +76,10 @@ h1, label {
   color: #02548b;
 }
 
+.accordion-button, .accordion-item:first-of-type .accordion-button {
+  color: #006fba;
+}
+
 .orange {
   color: #9e5c00;
   }
