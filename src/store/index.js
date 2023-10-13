@@ -155,10 +155,10 @@ export default createStore({
     },
     //mutation per azzerare il carrello
     AZZERA_CARRELLO(state) {
-      state.products.forEach(product => {
-        product.cart = 0;
-      });
-    },
+      console.log("AZZERA_CARRELLO è stata chiamata.");
+      state.cart = [];
+      state.cartGlobal = 0;
+  },
   },
   actions: {},
   modules: {},

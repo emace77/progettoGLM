@@ -40,11 +40,12 @@ export default {
     name: 'CartPage',
     //mapGetters è un aiuto fornito da Vuex per aiutare a legare i getter (funzioni che ottengono dati dallo stato) del tuo store a proprietà calcolate locali nei tuoi componenti Vue.
     computed: mapGetters(['cartItems']),
-    //serve ad azzerare il carrello
-    azzeraCarrello() {
+    methods:{
+      azzeraCarrello() {
       this.$store.commit('AZZERA_CARRELLO');
-      alert("Carrello azzerato!");  // Opzionale: Mostra un messaggio all'utente per confermare che il carrello è stato azzerato
+      alert("Stai rimuovendo i prodotti dal tuo carrello!");  // Opzionale: Mostra un messaggio all'utente per confermare che il carrello è stato azzerato
     }
+}
 }
   </script>
 
