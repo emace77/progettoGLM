@@ -52,6 +52,10 @@
               >Come funziona</router-link
             >
           </li>
+          <li>
+            <input v-model="searchQuery" type="text" placeholder="Cerca per titolo o autore" />
+            <button @click="search">Cerca</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -60,5 +64,17 @@
 <!-- eslint-disable -->
 <script>
 /* eslint-disable */
-export default {};
+export default {
+  data() {
+    return {
+      searchQuery: ""
+    };
+  },
+  methods: {
+    search() {
+      this.$router.push({ name: 'search-results', params: { query: this.searchQuery } });
+      this.searchQuery = "";
+    }
+  }
+};
 </script>

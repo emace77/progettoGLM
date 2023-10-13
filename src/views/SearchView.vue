@@ -116,7 +116,7 @@ export default {
     /* da invocare al click su Cerca */ 
     search() {
       const SearchKey = new RegExp(this.searchTerm, 'i'); // la costante è uguale alla regular expression con la chiave di ricerca inserita dall'utente. i serve per rendere la ricerca non case-sensitive
-      this.searchResults = this.products.filter(product => { // con il metodo filter usato sull'array products dello store, viene verificato se il titolo, l'autore o il genere contiene la chiave di ricerca. Se c'è corrispondenza, quel prodotto viene incluso nell'array searchResults.
+      this.searchResults = this.products.filter(product => { // con il metodo filter usato sull'array products dello store, viene verificato se il titolo o l'autore contiene la chiave di ricerca. Se c'è corrispondenza, quel prodotto viene incluso nell'array searchResults.
         return SearchKey.test(product.title) || SearchKey.test(product.author); 
       });
       this.searchMsg = this.searchTerm;

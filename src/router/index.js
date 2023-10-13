@@ -9,6 +9,7 @@ import CartPage from "../views/CartPage.vue";
 import LogView from "../views/LogView.vue";
 import AboutView from "../views/AboutView.vue";
 import SearchView from "../views/SearchView.vue";
+import SearchResultComponent from "../views/SearchResultComponent.vue";
 
 
 const routes = [
@@ -34,7 +35,7 @@ const routes = [
     props: true,
   },
   {
-    path: "/carrello", // <-- Aggiungi questa rotta
+    path: "/carrello",
     name: "carrello",
     component: CartPage,
   },
@@ -52,6 +53,11 @@ const routes = [
     path: "/search", 
     name: "search",
     component: SearchView,
+  },
+  {
+    path: '/search-results',
+    name: 'search-results',
+    component: SearchResultComponent,
   },
   {
     path: "/:catchAll(.*)",
