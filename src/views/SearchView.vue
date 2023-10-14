@@ -19,20 +19,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header mt-0">
-              <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Ricerca per editore
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <label for="search2" class="form-label d-none">Inserisci l'editore</label>
-                <input v-model="searchTermPublisher" id="search2" class="form-control w-50" placeholder="Inserisci l'editore" aria-describedby="cerca per editore" />
-                <button class="btn-primary mt-3 px-2 py-1" @click="searchPublisher">Cerca</button>
-              </div>
-            </div>
-          </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header mt-0">
               <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
@@ -44,6 +31,8 @@
                 <label for="search3" class="form-label d-none">Inserisci il codice ISBN</label>
                 <input v-model="searchTermIsbn" id="search3" class="form-control w-50" placeholder="Inserisci il codice ISBN" aria-describedby="cerca per ISBN" />
                 <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
+                <div v-if="isErrorNumber" class="invalid-feedback">Attenzione, inserisci un numero .</div>
+                <div v-if="isErrorLength" class="invalid-feedback">Attenzione, il numero deve essere di 13 cifre.</div>
               </div>
             </div>
           </div>
@@ -102,6 +91,8 @@ export default {
       searchTermPublisher: '',  
       searchMsg: '', 
       nResults: -1,
+      isErrorNumber: false,
+      isErrorLength: false,
     };
   },
   computed: {
@@ -115,34 +106,35 @@ export default {
     },
     /* da invocare al click su Cerca */ 
     search() {
-      const SearchKey = new RegExp(this.searchTerm, 'i'); // la costante è uguale alla regular expression con la chiave di ricerca inserita dall'utente. i serve per rendere la ricerca non case-sensitive
-      this.searchResults = this.products.filter(product => { // con il metodo filter usato sull'array products dello store, viene verificato se il titolo o l'autore contiene la chiave di ricerca. Se c'è corrispondenza, quel prodotto viene incluso nell'array searchResults.
-        return SearchKey.test(product.title) || SearchKey.test(product.author); 
-      });
+      const searchKey = this.searchTerm.toLowerCase(); // minuscolo per avere ricerca non case-sensitive
+      this.searchResults = this.products.filter(product => {
+        // confronta la chiave di ricerca e il titolo o l'autore del prodotto
+        const titleOk = product.title.toLowerCase().includes(searchKey);
+        const authorOk = product.author.toLowerCase().includes(searchKey);
+        const publisherOk = product.publisher.toLowerCase().includes(searchKey);
+        // Restituisci true se uno degli attributi contiene la chiave di ricerca
+        return titleOk || authorOk || publisherOk;
+    });
       this.searchMsg = this.searchTerm;
       this.searchTerm = '';
       this.nResults = this.searchResults.length;
     },
-
-    searchPublisher() {
-      const SearchKey = new RegExp(this.searchTermPublisher, 'i'); 
-      this.searchResults = this.products.filter(product => { 
-        return SearchKey.test(product.publisher); 
-      });
-      this.searchMsg = this.searchTermPublisher;
-      this.searchTermPublisher = '';
-      this.nResults = this.searchResults.length;
-    },
-    
+        
     searchIsbn() {
-      const SearchKey = new RegExp(this.searchTermIsbn, 'i'); 
-      this.searchResults = this.products.filter(product => { 
-        return SearchKey.test(product.isbn); 
-      });
-      this.searchMsg = this.searchTermIsbn;
-      this.searchTermIsbn = '';
-      this.nResults = this.searchResults.length;
+    const searchKey = this.searchTermIsbn;
+    if (isNaN(searchKey) || searchKey.length !== 13) {
+      this.isErrorNumber = isNaN(searchKey);
+      this.isErrorLength = searchKey.length !== 13;
+      // Impostare le variabili di errore e interrompere l'esecuzione della funzione
+      return;
     }
+
+    this.searchResults = this.products.filter(product => product.isbn === searchKey);
+    this.searchMsg = this.searchTermIsbn;
+    this.searchTermIsbn = '';
+    this.nResults = this.searchResults.length;
+  },
+
   }
 };
 

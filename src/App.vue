@@ -89,6 +89,14 @@ h1, label {
   background-color: #006fba;
 }
 
+.invalid-feedback {
+    display: block !important; 
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: red;
+}
+
 /* NAV */
 .navbar-brand img {
   width: 200px;
