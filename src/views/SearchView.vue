@@ -14,7 +14,7 @@
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
               <div class="accordion-body">
                 <label for="search1" class="form-label d-none">Inserisci la chiave di ricerca</label>
-                <input v-model="searchTerm" id="search1" class="form-control w-50" placeholder="Inserisci il titolo o l'autore" aria-describedby="cerca" />
+                <input v-model="searchTerm" id="search1" class="form-control w-50" placeholder="Inserisci la chiave di ricerca" aria-describedby="cerca" />
                 <button class="btn-primary mt-3 px-2 py-1" @click="search">Cerca</button>
               </div>
             </div>
