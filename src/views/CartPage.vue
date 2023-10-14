@@ -6,10 +6,6 @@
       <h3>Prodotti selezionati:</h3>
       <!-- contenuto del tuo carrello -->
       <ul class="list-group">
-      <!-- <li class="list-group-item" v-for="item in cartItems" :key="item.id">
-
-       {{ item.title }} - Quantità: {{ item.quantity }} - Prezzo: {{ item.price }}€
-      </li> -->
       <li class="list-group-item" v-for="item in cartItems" :key="item.id">
         <img :src="item.image" alt="Product Image" class="item-image">
         <span class="item-title">{{ item.title }}</span>
@@ -44,7 +40,7 @@ export default {
     methods:{
       azzeraCarrello() {
       this.$store.commit('AZZERA_CARRELLO');
-      alert("Stai rimuovendo i prodotti dal tuo carrello!");  // Opzionale: Mostra un messaggio all'utente per confermare che il carrello è stato azzerato
+      alert("Stai rimuovendo i prodotti dal tuo carrello!");  
     }
 }
 }
