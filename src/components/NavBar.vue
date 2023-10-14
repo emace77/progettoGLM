@@ -35,7 +35,7 @@
         </a>
         </div>
         <div class="collapse navbar-collapse ms-4 col-8 col-lg-9" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 col-12 col-lg-4">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <router-link :to="{ name: 'home' }" class="nav-link"
                 >Home</router-link
@@ -47,21 +47,11 @@
               >
             </li>
             <li class="nav-item">
-              <router-link :to="{ name: 'search' }" class="nav-link"
-                >Ricerca</router-link
-              >
-            </li>
-            <li class="nav-item">
               <router-link :to="{ name: 'about' }" class="nav-link"
-                >Come funziona</router-link
+                >Chi siamo</router-link
               >
             </li>
           </ul>
-          <div class=" col-12 col-lg-8" v-if="!isSearchResultsView">
-            <label for="searchNav" class="form-label d-none">Inserisci il titolo o l'autore</label>
-            <input v-model="searchQuery" id="searchNav" class="form-control d-inline me-2 pt-1" type="text" placeholder="Cerca per titolo o autore" />
-            <button @click="search" class="btn btn-light">Cerca</button>
-          </div>
         </div>
     </div>
   </nav>
