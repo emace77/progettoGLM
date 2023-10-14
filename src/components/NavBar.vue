@@ -57,7 +57,7 @@
               >
             </li>
           </ul>
-          <div class=" col-12 col-lg-8">
+          <div class=" col-12 col-lg-8" v-if="!isSearchResultsView">
             <label for="searchNav" class="form-label d-none">Inserisci il titolo o l'autore</label>
             <input v-model="searchQuery" id="searchNav" class="form-control d-inline me-2 pt-1" type="text" placeholder="Cerca per titolo o autore" />
             <button @click="search" class="btn btn-light">Cerca</button>
@@ -74,6 +74,12 @@ export default {
     return {
       searchQuery: ""
     };
+  },
+  computed: {
+    // Utilizza una computed property per ottenere il percorso corrente dalla tua istanza di Vue Router
+    isSearchResultsView() {
+      return this.$route.name === 'search-results'; // Assumi che il nome della vista sia 'search-results'
+    }
   },
   methods: {
     search() {
