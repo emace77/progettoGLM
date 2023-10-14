@@ -10,15 +10,15 @@ export default createStore({
         image: "/images/scuola.png",
         alt: "Immagine di Freepik",
         text: "A tutti gli studenti delle scuole superiori, un coupon di benvenuto di 20 euro",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
+        description:"Bookvue offre un coupon di benvenuto del valore di 20 euro a tutti gli studenti delle scuole superiori per supportare il loro percorso educativo e stimolare la passione per la lettura. Il coupon dà l'opportunità di scoprire ed usufruire dell'ampia selezione di titoli presenti nella nostra libreria, dai classici della letteratura alle ultime novità."
       },
-      {
+        {
         id: 2,
         title: "Book Quiz",
         image: "/images/concorso.png",
         alt: "Immagine di Freepik",
         text: "Rispondi a 10 domande e vinci il tuo libro preferito",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
+        description: "Questo è il luogo dove le tue risposte possono portarti verso il tuo libro preferito. Partecipare è semplice: rispondi a 10 domande e potresti essere il fortunato vincitore di un libro che hai sempre desiderato. Siamo curiosi di scoprire quanto conosci del mondo dei libri, e siamo pronti a premiare la tua passione per la lettura. "
       },
       {
         id: 3,
@@ -26,7 +26,7 @@ export default createStore({
         image: "/images/usato.png",
         alt: "Immagine di Freepik",
         text: "Pagine che hanno ancora tanto da dire. Dai una nuova vita a un libro usato e risparmia",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim lorem. Proin id erat neque. Mauris sodales, eros ut consequat viverra, velit nulla lobortis diam, in vestibulum dui massa semper risus. Morbi tempus et ex at rutrum. Nulla magna massa, pharetra ac diam non, rutrum laoreet ex. Morbi lobortis ligula ac porttitor vehicula. Suspendisse vehicula odio et est semper, ut pulvinar orci malesuada. Morbi ac dictum risus. Quisque id elementum sem. Aliquam nisi tellus, fermentum id nunc et, laoreet aliquam ex. Aenean nec nunc sed nulla ultricies finibus ut vitae leo. Phasellus nibh justo, luctus venenatis blandit pulvinar, sodales eu massa. Phasellus rutrum faucibus elit. Vestibulum venenatis egestas faucibus. Fusce mi ipsum, interdum id lorem at, efficitur imperdiet eros. Curabitur a molestie risus."
+        description: "Ogni libro racconta una storia, e ogni pagina ha ancora tanto da dire. Ecco perché offriamo l'opportunità di dare nuova vita a libri usati, contribuendo al loro ciclo di storie e risparmiando allo stesso tempo. Inoltre, se porti un libro usato da vendere, hai diritto a un'ulteriore scontistica su uno dei nostri titoli."
       },
     ],
     cardSelected: null, // inizializzo a null cardSelected
@@ -48,7 +48,6 @@ export default createStore({
         inventory: 3,
         cart:0,
         highlight: true,
-        reviews: [], 
       },
       {
         id: 2,
@@ -67,7 +66,6 @@ export default createStore({
         inventory: 0,
         cart:0,
         highlight: false,
-        reviews: [], 
       },
       {
         id: 3,
@@ -86,7 +84,6 @@ export default createStore({
         inventory: 15,
         cart:0,
         highlight: true,
-        reviews: [], 
       },
       {
         id: 4,
@@ -105,7 +102,6 @@ export default createStore({
         inventory: 11,
         cart:0,
         highlight: true,
-        reviews: [], 
       },
       {
         id: 5,
@@ -124,7 +120,6 @@ export default createStore({
         inventory: 4,
         cart:0,
         highlight: false,
-        reviews: [], 
       },
       {
         id: 6,
@@ -143,7 +138,6 @@ export default createStore({
         inventory: 4,
         cart:0,
         highlight: false,
-        reviews: [], 
       },
       {
         id: 7,
@@ -162,7 +156,6 @@ export default createStore({
         inventory: 12,
         cart:0,
         highlight: false,
-        reviews: [], 
       },
       {
         id: 8,
@@ -181,7 +174,6 @@ export default createStore({
         inventory: 6,
         cart:0,
         highlight: false,
-        reviews: [], 
       },
       {
         id: 9,
@@ -200,7 +192,6 @@ export default createStore({
         inventory: 0,
         cart:0,
         highlight: false,
-        reviews: [], 
       },
     ],
     productSelected: null, 
