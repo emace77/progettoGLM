@@ -61,7 +61,7 @@ export default {
       const price = Number(item.price);
       totalPrice += quantity * price;
     }
-    return totalPrice;
+    return totalPrice.toFixed(2);
 }
 }
 }
