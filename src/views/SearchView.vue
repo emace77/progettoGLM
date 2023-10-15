@@ -46,7 +46,7 @@
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
               <div class="accordion-body">
-                  <div v-for="genre in genres" :key="genre.id">
+                  <div v-for="genre in genres" :key="genre.id" class="mb-2">
                     <input type="checkbox" v-model="selectedGenre" :value="genre.name" :id="genre.name" class="form-check-input" />
                     <label class="form-check-label ps-2" :for="genre.name">
                       {{ genre.name }}
