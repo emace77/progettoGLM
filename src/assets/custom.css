@@ -11,6 +11,10 @@ h1, h2, h3, label {
   .text-small {
     font-size: 0.8rem;
   }
+
+a img:hover {
+    opacity: 80%;
+  }
   
   /* COLORI */
   .blue {
