@@ -7,7 +7,6 @@ import CardsView from "../views/CardsView.vue";
 import CardDetailView from "../views/CardDetailView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import CartPage from "../views/CartPage.vue";
-import LogView from "../views/LogView.vue";
 import AboutView from "../views/AboutView.vue";
 import SearchView from "../views/SearchView.vue";
 import SearchResultComponent from "../views/SearchResultComponent.vue";
@@ -45,11 +44,6 @@ const routes = [
     path: "/carrello",
     name: "carrello",
     component: CartPage,
-  },
-  {
-    path: "/login", 
-    name: "login",
-    component: LogView,
   },
   {
     path: "/about", 
