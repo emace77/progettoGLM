@@ -9,8 +9,6 @@ import NotFoundView from "../views/NotFoundView.vue";
 import CartPage from "../views/CartPage.vue";
 import AboutView from "../views/AboutView.vue";
 import SearchView from "../views/SearchView.vue";
-import SearchResultComponent from "../views/SearchResultComponent.vue";
-
 
 const routes = [
   {
@@ -54,11 +52,6 @@ const routes = [
     path: "/search", 
     name: "search",
     component: SearchView,
-  },
-  {
-    path: '/search-results',
-    name: 'search-results',
-    component: SearchResultComponent,
   },
   {
     path: "/:catchAll(.*)",
