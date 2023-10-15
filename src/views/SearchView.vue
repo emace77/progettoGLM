@@ -31,9 +31,9 @@
                 <label for="search2" class="form-label d-none">Inserisci il codice ISBN</label>
                 <input v-model="searchTermIsbn" id="search2" class="form-control w-50" placeholder="Inserisci il codice ISBN" aria-describedby="cerca per ISBN" />
                 <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
-                <div v-if="isErrorNumber && isErrorLength" class="invalid-feedback">Il codice ISBN deve essere un numero di 13 cifre</div>
-                <div v-else-if="isErrorNumber" class="invalid-feedback">Il codice ISBN deve essere un numero</div>
-                <div v-else-if="isErrorLength" class="invalid-feedback">Il codice ISBN deve contenere 13 cifre</div>
+                <div v-if="ErrorNumber && ErrorLength" class="invalid-feedback">Il codice ISBN deve essere un numero di 13 cifre</div>
+                <div v-else-if="ErrorNumber" class="invalid-feedback">Il codice ISBN deve essere un numero</div>
+                <div v-else-if="ErrorLength" class="invalid-feedback">Il codice ISBN deve contenere 13 cifre</div>
               </div>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default {
       searchTermPublisher: '',  
       searchMsg: '', 
       nResults: -1,
-      isErrorNumber: false,
-      isErrorLength: false,
+      ErrorNumber: false,
+      ErrorLength: false,
       selectedGenre: [],
     };
   },
@@ -129,12 +129,12 @@ export default {
     },
         
     searchIsbn() {
-      this.isErrorNumber = false;
-      this.isErrorLength = false; 
+      this.ErrorNumber = false;
+      this.ErrorLength = false; 
       const searchKey = this.searchTermIsbn;
       if (isNaN(searchKey) || searchKey.length !== 13) {
-      this.isErrorNumber = isNaN(searchKey);
-      this.isErrorLength = searchKey.length !== 13;
+      this.ErrorNumber = isNaN(searchKey);
+      this.ErrorLength = searchKey.length !== 13;
       // Impostare le variabili di errore e interrompere l'esecuzione della funzione
       return;
     }
