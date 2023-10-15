@@ -52,7 +52,7 @@
                       {{ genre.name }}
                     </label>
                   </div>
-                  <button class="btn-primary mt-3 px-2 py-1" @click="searchGenre">Cerca per genere</button>
+                  <button class="btn-primary mt-3 px-2 py-1" @click="searchGenre">Cerca</button>
               </div>
             </div>
           </div>
