@@ -2,10 +2,10 @@
 <template>
   <div class="container-fluid">
     <div class="row blue">
-      <div class="col-10">
+      <div class="col-9">
         <NavBar></NavBar>
       </div>
-      <div class="col-2 ps-0 pe-1">
+      <div class="col-3 ps-0 pe-1">
         <NavIcon></NavIcon>
       </div>
     </div>
