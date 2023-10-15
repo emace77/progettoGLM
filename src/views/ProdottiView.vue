@@ -55,12 +55,3 @@ export default {
 /* per chart manca props inventory */
 };
 </script>
-
-<style>
-.titolo_listalibri{
-  color:#006fba;
-  margin-top: 3rem;
-  text-align: center;
-}
-
-</style>

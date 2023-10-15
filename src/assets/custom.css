@@ -1,5 +1,5 @@
 /* GENERALI */
-h1, label {
+h1, h2, h3, label {
     color: #006fba;
   }
   
@@ -30,7 +30,7 @@ h1, label {
     color: #02548b;
   }
   
-  .accordion-button, .accordion-item:first-of-type .accordion-button, .accordion-button:not(.collapsed)  {
+  .blue-text, .accordion-button, .accordion-item:first-of-type .accordion-button, .accordion-button:not(.collapsed)  {
     color: #006fba;
   }
   

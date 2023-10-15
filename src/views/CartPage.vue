@@ -16,15 +16,15 @@
             <img :src="item.image" alt="Product Image" class="w-50">
           </div>
           <div class="col-md-9 pt-2 pt-lg-5">
-            <p class="item-title">{{ item.title }}</p>
-            <p class="item-quantity">Quantità: {{ item.quantity }}</p>
-            <p class="item-price">Prezzo: {{ item.price }}€</p>
+            <p class="fw-bold fs-4 blue-text mb-1 mb-md-2">{{ item.title }}</p>
+            <p class="fw-semibold fs-5 mb-1 mb-md-2">Quantità: {{ item.quantity }}</p>
+            <p class="fw-semibold fs-5">Prezzo: {{ item.price }}€</p>
           </div>
         </div>
       </li>
     </ul>
     <div v-if="cartItems.length > 0" class="mt-3"><span class="fw-bold">Prezzo totale:</span> {{ totalPrice() }}€</div>
-    <button v-if="cartItems.length > 0" type="button" class="btn btn-blu mt-4" @click="azzeraCarrello">svuota carrello</button>
+    <button v-if="cartItems.length > 0" type="button" class="btn btn-primary mt-4" @click="azzeraCarrello">svuota carrello</button>
   <div class="row">
   <div class="px-4 py-5 my-5 text-center blue-light">
   <h1 class="display-6 fw-bold">Sconto del 10% sul primo ordine</h1>
@@ -66,57 +66,3 @@ export default {
 }
 }
 </script>
-
-<style>
-h2{
-  color: #006fba;
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  font-weight: 500;
-}
-h3{
-  color: #006fba;
-}
-.btn-blu{
-background-color:#006fba ;
-color:#ffff;
-}
-.btn-blu:hover{
-background-color:#00aeef ;
-color:#ffff;
-}
-.item-title{
-color: #006fba;
-font-weight: 700;
-margin-right: 1.5rem;
-font-size: x-large;
-}
-.item-quantity{
-font-weight: 500;
-margin-right: 1.5rem;
-font-size: large;
-}
-.item-price{
-font-weight: 500;
-font-size: large;
-}
-
-
-
-@media (max-width: 768px) {
-  .item-image {
-    width: 110px;
-    height: 170px;
-    margin-right: 0.5rem;
-  }
-
-}
-
-
-
-
-
-
-
-</style>
