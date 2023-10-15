@@ -51,6 +51,11 @@
                 >Chi siamo</router-link
               >
             </li>
+            <li class="nav-item">
+              <router-link :to="{ name: 'cards' }" class="nav-link"
+                >Promozioni</router-link
+              >
+            </li>
           </ul>
         </div>
     </div>

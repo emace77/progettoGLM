@@ -3,7 +3,8 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import MainView from "../views/MainView.vue";
 import ProdottiView from "../views/ProdottiView.vue";
 import DettaglioView from "../views/DettaglioView.vue";
-import CardView from "../views/CardView.vue";
+import CardsView from "../views/CardsView.vue";
+import CardDetailView from "../views/CardDetailView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import CartPage from "../views/CartPage.vue";
 import LogView from "../views/LogView.vue";
@@ -29,9 +30,15 @@ const routes = [
     component: DettaglioView,
   },
   {
+    path: "/cards", 
+    name: "cards",
+    component: CardsView,
+    props: true,
+  },
+  {
     path: "/card/:cardId", 
     name: "card",
-    component: CardView,
+    component: CardDetailView,
     props: true,
   },
   {

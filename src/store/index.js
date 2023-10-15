@@ -30,13 +30,32 @@ export default createStore({
       },
     ],
     cardSelected: null, // inizializzo a null cardSelected
+    genres: [
+      {
+        id: 1,
+        name: "narrativa italiana",
+      },
+      {
+        id: 2,
+        name: "romanzo",
+      },
+      {
+        id: 3,
+        name: "romanzo storico",
+      },
+      {
+        id: 4,
+        name: "saggio",
+      },
+        
+    ],
     products: [
       {
         id: 1,
         title: "Il prigioniero dell’interno 7",
         author: "Marco Presta",
         publisher: "Einaudi",
-        genre: "letteratura italiana",
+        genre: "narrativa italiana",
         language: "italiano",
         date: "25/01/2022",
         pages: "184",
@@ -108,7 +127,7 @@ export default createStore({
         title: "Julie",
         author: "Ida Amlesu",
         publisher: "Sonzogno",
-        genre: "narrativa italiana-romanzo",
+        genre: "narrativa italiana",
         language: "italiano",
         date: "08/11/2022",
         pages: "328",
@@ -126,7 +145,7 @@ export default createStore({
         title: "Il rosmarino non capisce l'inverno",
         author: "Matteo Bussola",
         publisher: "Einaudi",
-        genre: "narrativa italiana-romanzo",
+        genre: "romanzo",
         language: "italiano",
         date: "28/06/2022",
         pages: "160",
@@ -144,7 +163,7 @@ export default createStore({
         title: "La stanza delle mele",
         author: "Matteo Righetto",
         publisher: "Feltrinelli",
-        genre: "narrativa italiana-romanzo",
+        genre: "romanzo",
         language: "italiano",
         date: "07/04/2022",
         pages: "240",
@@ -162,7 +181,7 @@ export default createStore({
         title: "Fiore di roccia",
         author: "Ilaria Tuti",
         publisher: "Longanesi",
-        genre: "narrativa italiana-romanzo",
+        genre: "narrativa italiana",
         language: "italiano",
         date: "08/06/2020",
         pages: "320",
@@ -180,7 +199,7 @@ export default createStore({
         title: "Il nome della rosa - Ediz.Illustrata",
         author: "Umberto Eco",
         publisher: "La Nave di Teseo",
-        genre: "narrativa italiana-romanzo",
+        genre: "romanzo",
         language: "italiano",
         date: "21/05/2020",
         pages: "624",

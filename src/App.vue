@@ -76,7 +76,7 @@ h1, label {
   color: #02548b;
 }
 
-.accordion-button, .accordion-item:first-of-type .accordion-button {
+.accordion-button, .accordion-item:first-of-type .accordion-button, .accordion-button:not(.collapsed)  {
   color: #006fba;
 }
 

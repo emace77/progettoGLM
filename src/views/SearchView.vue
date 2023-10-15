@@ -22,45 +22,49 @@
 
           <div class="accordion-item">
             <h2 class="accordion-header mt-0">
-              <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Ricerca per ISBN
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <label for="search2" class="form-label d-none">Inserisci il codice ISBN</label>
+                <input v-model="searchTermIsbn" id="search2" class="form-control w-50" placeholder="Inserisci il codice ISBN" aria-describedby="cerca per ISBN" />
+                <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
+                <div v-if="isErrorNumber && isErrorLength" class="invalid-feedback">Il codice ISBN deve essere un numero di 13 cifre</div>
+                <div v-else-if="isErrorNumber" class="invalid-feedback">Il codice ISBN deve essere un numero</div>
+                <div v-else-if="isErrorLength" class="invalid-feedback">Il codice ISBN deve contenere 13 cifre</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header mt-0">
+              <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Ricerca per genere
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <label for="search3" class="form-label d-none">Inserisci il codice ISBN</label>
-                <input v-model="searchTermIsbn" id="search3" class="form-control w-50" placeholder="Inserisci il codice ISBN" aria-describedby="cerca per ISBN" />
-                <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
-                <div v-if="isErrorNumber" class="invalid-feedback">Attenzione, inserisci un numero .</div>
-                <div v-if="isErrorLength" class="invalid-feedback">Attenzione, il numero deve essere di 13 cifre.</div>
+                  <div v-for="genre in genres" :key="genre.id">
+                    <input type="checkbox" v-model="selectedGenre" :value="genre.name" :id="genre.name" class="form-check-input" />
+                    <label class="form-check-label ps-2" :for="genre.name">
+                      {{ genre.name }}
+                    </label>
+                  </div>
+                  <button class="btn-primary mt-3 px-2 py-1" @click="searchGenre">Cerca per genere</button>
               </div>
             </div>
           </div>
         </div>
         <!-- fine accordion -->
-        
-        <!-- 
-        <div>
-          <label for="search1" class="form-label fw-bold fs-3">Ricerca per titolo o autore</label>
-          <input v-model="searchTerm" id="search1" class="form-control w-50" placeholder="Cerca per titolo o autore" aria-describedby="cerca" />
-          <button class="btn-primary mt-3 px-2 py-1" @click="search">Cerca</button>
-        </div>
-        <div class="mt-5">
-          <label for="search2" class="form-label fw-bold fs-3">Ricerca per editore</label>
-          <input v-model="searchTermPublisher" id="search2" class="form-control w-50" placeholder="Cerca per editore" aria-describedby="cerca per editore" />
-          <button class="btn-primary mt-3 px-2 py-1" @click="searchPublisher">Cerca</button>
-        </div>
-        <div class="mt-5">
-          <label for="search3" class="form-label fw-bold fs-3">Ricerca per ISBN</label>
-          <input v-model="searchTermIsbn" id="search3" class="form-control w-50" placeholder="Cerca per ISBN" aria-describedby="cerca per ISBN" />
-          <button class="btn-primary mt-3 px-2 py-1" @click="searchIsbn">Cerca</button>
-        </div>-->
+
         <div class="row mt-5">
           <hr v-if="nResults >= 0">
           <div class="col-4 pt-3" v-if="searchMsg !== ''">
             <span class="fst-italic m-0">Hai cercato:</span> {{ searchMsg }}
           </div>
-          <div class="col-4 pt-4" v-if="nResults >= 0">
+          <div class="col-4 pt-3" v-if="nResults >= 0">
           {{ nResults }} <span class="fst-italic m-0">risultati trovati</span>
           </div>
         </div>
@@ -93,11 +97,15 @@ export default {
       nResults: -1,
       isErrorNumber: false,
       isErrorLength: false,
+      selectedGenre: [],
     };
   },
   computed: {
     products() {
       return this.$store.state.products; 
+    },
+    genres() {
+      return this.$store.state.genres;
     }
   },
   methods: {
@@ -121,19 +129,31 @@ export default {
     },
         
     searchIsbn() {
-    const searchKey = this.searchTermIsbn;
-    if (isNaN(searchKey) || searchKey.length !== 13) {
+      this.isErrorNumber = false;
+      this.isErrorLength = false; 
+      const searchKey = this.searchTermIsbn;
+      if (isNaN(searchKey) || searchKey.length !== 13) {
       this.isErrorNumber = isNaN(searchKey);
       this.isErrorLength = searchKey.length !== 13;
       // Impostare le variabili di errore e interrompere l'esecuzione della funzione
       return;
     }
 
-    this.searchResults = this.products.filter(product => product.isbn === searchKey);
+    this.searchResults = this.products.filter(product => product.isbn == searchKey);
     this.searchMsg = this.searchTermIsbn;
     this.searchTermIsbn = '';
     this.nResults = this.searchResults.length;
-  },
+    },
+
+    searchGenre() {
+      // Filtra i prodotti in base ai generi selezionati
+      this.searchResults = this.products.filter(product => {
+        return this.selectedGenre.length === 0 || this.selectedGenre.includes(product.genre);
+      });
+
+      // Imposta il numero di risultati
+      this.nResults = this.searchResults.length;
+    }
 
   }
 };
