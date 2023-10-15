@@ -174,4 +174,10 @@ h5 a:hover {
   width: 50%;
 }
 }
+
+@media screen and (max-width: 768px) {
+.card {
+  flex-direction: row;
+}
+}
 </style>
