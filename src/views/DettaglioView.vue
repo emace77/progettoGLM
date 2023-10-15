@@ -8,7 +8,7 @@
           <img :src="productSelected.image" class="w-100 rounded" :alt="productSelected.title" />
         </div>
         <div class="col-md-8">
-          <h1 class="fs-4 orange">
+          <h1 class="fs-4 orange mt-3 mt-lg-0">
             {{ productSelected.author }}
           </h1>
           <h1 class="fs-7 mb-4">
@@ -59,16 +59,6 @@
         <h2 class="mt-5 mb-3 text-start">Trama</h2>
         <p class="text-justify">{{ productSelected.plot }}</p>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-        <h2 class="mt-5 mb-3 text-start">Aggiungi una recensione</h2>
-        <product-Review></product-Review>
-        </div>
-      </div>
-      <div class="row">
-        <h2 class="mt-5 mb-3 text-start">Recensioni dei lettori</h2>
-        <hr class="line-bold mb-4">
-      </div>
     </div>
     <div v-else class="row">
       <p>Il libro selezionato non è disponibile.</p>
@@ -77,13 +67,9 @@
 </template>
 <!-- eslint-disable -->
 <script>
-  /* eslint-disable */
-import productReview from "@/components/productReview.vue";
-
+/* eslint-disable */
 export default {
-  components: {
-  'product-Review':productReview
-  },
+  components: {},
   computed: {
     productSelected() {
       return this.$store.state.productSelected;
