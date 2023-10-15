@@ -11,10 +11,16 @@
     <!-- contenuto del tuo carrello -->
     <ul class="list-group">
       <li class="list-group-item" v-for="item in cartItems" :key="item.id">
+        <div class="row">
+          <div class="col-md-4">
         <img :src="item.image" alt="Product Image" class="item-image">
+      </div>
+      <div class="col-md-8 pt-5">
         <span class="item-title">{{ item.title }}</span>
         <span class="item-quantity">Quantità: {{ item.quantity }}</span>
         <span class="item-price">Prezzo: {{ item.price }}€</span>
+      </div>
+    </div>
       </li>
     </ul>
     <div v-if="cartItems.length > 0" class="mt-3"><span class="fw-bold">Prezzo totale:</span> {{ totalPrice() }}€</div>
@@ -84,17 +90,44 @@ color:#ffff;
 color: #006fba;
 font-weight: 700;
 margin-right: 1.5rem;
+font-size: x-large;
 }
 .item-quantity{
 font-weight: 500;
 margin-right: 1.5rem;
+font-size: large;
 }
 .item-price{
 font-weight: 500;
+font-size: large;
 }
 .item-image {
 width: 220px;
 height: 340px;
 margin-right: 1rem;
 }
+
+
+@media (max-width: 768px) {
+  .item-image {
+    width: 110px;
+    height: 170px;
+    margin-right: 0.5rem;
+  }
+
+  .item-title,
+  .item-quantity,
+  .item-price {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
 </style>
