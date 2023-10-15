@@ -15,7 +15,7 @@
           <div class="col-md-4">
         <img :src="item.image" alt="Product Image" class="item-image">
       </div>
-      <div class="col-md-8 pt-5">
+      <div class="col-md-8 pt-2 pt-lg-5">
         <span class="item-title">{{ item.title }}</span>
         <span class="item-quantity">Quantità: {{ item.quantity }}</span>
         <span class="item-price">Prezzo: {{ item.price }}€</span>
