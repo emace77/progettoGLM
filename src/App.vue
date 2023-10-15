@@ -6,7 +6,7 @@
         <NavBar></NavBar>
       </div>
       <div class="col-2 ps-0 pe-1">
-        <LogCart></LogCart>
+        <NavIcon></NavIcon>
       </div>
     </div>
     <div class="row px-lg-5 py-lg-4 py-2 px-3">
@@ -30,14 +30,14 @@
 import NavBar from "@/components/NavBar.vue";
 import FooterBar from "@/components/FooterBar.vue";
 import SideBar from "@/components/SideBar.vue";
-import LogCart from "@/components/LogCart.vue";
+import NavIcon from "@/components/NavIcon.vue";
 
 export default {
   components: {
     NavBar,
     FooterBar,
     SideBar,
-    LogCart,
+    NavIcon,
   },
 };
 </script>

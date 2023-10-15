@@ -2,7 +2,7 @@
 <template>
     <div class="row">
       <div class="col-12">
-        <h1>Ricerca il tuo libro preferito</h1>
+        <h1 class="mt-2 text-center">Ricerca il tuo libro preferito</h1>
         <!-- inizio accordion -->
         <div class="accordion mt-3" id="accordionSearchs">
           <div class="accordion-item">

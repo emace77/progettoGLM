@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <h1 class="titolo_listalibri">Elenco libri</h1>
+  <h1 class="mt-2 text-center">Elenco libri</h1>
   <div class="row">
     <div
       v-for="product in products"
@@ -20,7 +20,7 @@
               {{ product.title }}
             </router-link>
           </h5>
-          <p class="card-text d-none d-md-block">
+          <p class="card-text d-none d-sm-block">
             {{ product.text }}
           </p>
           <p class="txt_prezzo mt-2 mt-md-4">

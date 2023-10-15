@@ -2,8 +2,8 @@
 <!-- components/CartPage.vue -->
 <template>
   <div>
-    <h2>Carrello</h2>
-    <h3 v-if="cartItems.length > 0">Prodotti selezionati:</h3>
+    <h1 class="mt-2 text-center">Carrello</h1>
+    <h2 v-if="cartItems.length > 0">Prodotti selezionati:</h2>
     <div v-else>
       <p>Il carello è vuoto</p>
       <router-link class="btn btn-primary w-auto mb-2" :to="{ name: 'prodotti' }">Vai al catalogo</router-link>
