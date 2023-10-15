@@ -14,7 +14,7 @@
         <router-view />
       </div>
       <div class="col-lg-3 col-md-12 px-sm-05">
-        <SideBar></SideBar>
+        <SideBar v-if="!$route.path.includes('/card')"></SideBar>
       </div>
     </div>
     <div class="row blue">

@@ -1,7 +1,7 @@
 <!-- eslint-disable -->
 <template>
   <div class="container py-3">
-    <router-link class="btn btn-primary w-auto mb-2" :to="{ name: 'prodotti' }">Torna al catalogo</router-link>
+    <router-link class="btn btn-primary w-auto mb-3" :to="{ name: 'prodotti' }">Torna al catalogo</router-link>
     <div v-if="productSelected">
       <div class="row">
         <div class="col-md-4">

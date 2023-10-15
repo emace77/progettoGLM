@@ -12,19 +12,19 @@
     <ul class="list-group">
       <li class="list-group-item" v-for="item in cartItems" :key="item.id">
         <div class="row">
-          <div class="col-md-4">
-        <img :src="item.image" alt="Product Image" class="item-image">
-      </div>
-      <div class="col-md-8 pt-2 pt-lg-5">
-        <span class="item-title">{{ item.title }}</span>
-        <span class="item-quantity">Quantità: {{ item.quantity }}</span>
-        <span class="item-price">Prezzo: {{ item.price }}€</span>
-      </div>
-    </div>
+          <div class="col-md-3">
+            <img :src="item.image" alt="Product Image" class="w-50">
+          </div>
+          <div class="col-md-9 pt-2 pt-lg-5">
+            <p class="item-title">{{ item.title }}</p>
+            <p class="item-quantity">Quantità: {{ item.quantity }}</p>
+            <p class="item-price">Prezzo: {{ item.price }}€</p>
+          </div>
+        </div>
       </li>
     </ul>
     <div v-if="cartItems.length > 0" class="mt-3"><span class="fw-bold">Prezzo totale:</span> {{ totalPrice() }}€</div>
-    <button v-if="cartItems.length > 0" type="button" class="btn btn-blu mt-4" @click="azzeraCarrello">Azzera carrello</button>
+    <button v-if="cartItems.length > 0" type="button" class="btn btn-blu mt-4" @click="azzeraCarrello">svuota carrello</button>
   <div class="row">
   <div class="px-4 py-5 my-5 text-center blue-light">
   <h1 class="display-6 fw-bold">Sconto del 10% sul primo ordine</h1>
@@ -101,11 +101,7 @@ font-size: large;
 font-weight: 500;
 font-size: large;
 }
-.item-image {
-width: 220px;
-height: 340px;
-margin-right: 1rem;
-}
+
 
 
 @media (max-width: 768px) {
@@ -115,13 +111,6 @@ margin-right: 1rem;
     margin-right: 0.5rem;
   }
 
-  .item-title,
-  .item-quantity,
-  .item-price {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
 }
 
 

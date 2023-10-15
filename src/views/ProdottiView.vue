@@ -20,7 +20,7 @@
               {{ product.title }}
             </router-link>
           </h5>
-          <p class="card-text d-none d-sm-block">
+          <p class="card-text d-none d-md-block">
             {{ product.text }}
           </p>
           <p class="txt_prezzo mt-2 mt-md-4">
