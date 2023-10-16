@@ -66,7 +66,7 @@ export default createStore({
         isbn: 9788175257665,
         inventory: 3,
         cart:0,
-        highlight: true,
+        highlight: false,
       },
       {
         id: 2,
@@ -156,7 +156,7 @@ export default createStore({
         isbn: 9788806254483,
         inventory: 4,
         cart:0,
-        highlight: false,
+        highlight: true,
       },
       {
         id: 7,

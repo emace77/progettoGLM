@@ -27,10 +27,10 @@
         </div>
         <div class="carousel-inner">
           <div
-            v-for="product in highlightedProducts"
-            :key="product.id"
-            class="carousel-item"
-            :class="{ 'active': (product.id<=1)}"
+          v-for="(product, index) in highlightedProducts"
+          :key="product.id"
+          class="carousel-item"
+          :class="{ 'active': index === 0 }"
           >
             <router-link :key="product.id" :to="'/prodotti/' + product.id" @click="showProduct(product)">
                 <img :src="product.image" class="d-block" alt="product.title"></router-link
