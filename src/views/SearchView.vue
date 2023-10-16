@@ -61,10 +61,10 @@
 
         <div class="row mt-5">
           <hr v-if="nResults >= 0">
-          <div class="col-4 pt-3" v-if="searchMsg !== ''">
+          <div class="col-6 pt-3" v-if="searchMsg !== ''">
             <span class="fst-italic m-0">Hai cercato:</span> {{ searchMsg }}
           </div>
-          <div class="col-4 pt-3" v-if="nResults >= 0">
+          <div class="col-6 pt-3" v-if="nResults >= 0">
           {{ nResults }} <span class="fst-italic m-0">risultati trovati</span>
           </div>
         </div>
