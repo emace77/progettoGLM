@@ -46,7 +46,7 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'CartPage',
-  //mapGetters è un aiuto fornito da Vuex per aiutare a legare i getter (funzioni che ottengono dati dallo stato) del tuo store a proprietà calcolate locali nei tuoi componenti Vue.
+  //mapGetters serve per recuperare dallo store i prodotti presenti nel cart 
   computed: mapGetters(['cartItems']),
   methods:{
     azzeraCarrello() {

@@ -52,6 +52,5 @@ export default {
       this.$store.commit('selectProduct', product); 
     },
   },
-/* per chart manca props inventory */
 };
 </script>

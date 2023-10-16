@@ -24,8 +24,10 @@
 </template>
 <!-- eslint-disable -->
 <script>
+/* eslint-disable */
 export default {
   computed: {
+    /* per numero di prodotti nel carrello */
     cartGlobal() {
       return this.$store.state.cartGlobal;
     },

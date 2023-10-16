@@ -64,23 +64,5 @@
 <!-- eslint-disable -->
 <script>
 /* eslint-disable */
-export default {
-  data() {
-    return {
-      searchQuery: ""
-    };
-  },
-  computed: {
-    // Utilizza una computed property per ottenere il percorso corrente dalla tua istanza di Vue Router
-    isSearchResultsView() {
-      return this.$route.name === 'search-results'; // Assumi che il nome della vista sia 'search-results'
-    }
-  },
-  methods: {
-    search() {
-      this.$router.push({ name: 'search-results', params: { query: this.searchQuery } });
-      this.searchQuery = "";
-    }
-  }
-};
+export default {};
 </script>

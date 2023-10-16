@@ -89,7 +89,7 @@ export default createStore({
       {
         id: 3,
         title: "Avere tutto",
-        author: " Marco Missiroli",
+        author: "Marco Missiroli",
         publisher: "Einaudi",
         genre: "narrativa italiana",
         language: "italiano",
@@ -223,7 +223,7 @@ export default createStore({
         pages: "328",
         price: "18.90",
         image: "/images/julie.jpg",
-        text: "Una vita che è un inno all’anticonformismo, al coraggio di trovare la propria voce e di vivere senza compromessi, anche fra i dogmi e l’ipocrisia di una società di soli uomini.",
+        text: "Una vita che è un inno all'anticonformismo, al coraggio di trovare la propria voce e di vivere senza compromessi, anche fra i dogmi e l'ipocrisia di una società di soli uomini.",
         plot: "Francia, 1686. Sulla scalinata di rue de la Grosse-Margot, nei quartieri popolari di Parigi, vengono rinvenuti i cadaveri di due guardie del Re. Il luogotenente La Reynie non ha dubbi su chi sia il colpevole: la sedicenne Julie d'Aubigny. Spadaccina infallibile e orecchio assoluto, viene educata come un ragazzo dal padre e come una ragazza dal potente Conte d'Armagnac, che ne fa prima il suo giullare e poi la sua amante. Ma Julie non è creatura da farsi mettere in gabbia, e si ribella agli obblighi di un matrimonio di convenienza fuggendo nella notte, per vivere alla giornata con il complice Séranne, ex maestro d'armi e noto libertino. Braccata da La Reynie, perseguitata dal Conte e respinta dall'alta società - a cui pure appartiene per nascita -, Julie intraprende un tortuoso viaggio verso la libertà, durante il quale vestirà i panni del cavaliere e quelli della dama, conoscendo le imprevedibili sfumature dell'amore e la sua grande vocazione: la musica lirica. Prendendo spunto dalla figura realmente esistita di Julie d'Aubigny, virtuosa della spada e prima diva dell'opera francese, Ida Amlesù mette in scena un personaggio travolgente, spregiudicato e al tempo stesso fragile. Tra le pagine di questo magnetico romanzo, racconta una vita che è un inno all'anticonformismo, al coraggio di trovare la propria voce e di vivere senza compromessi, anche fra i dogmi e l'ipocrisia di una società di soli uomini.",
         isbn: 9788175257668,
         inventory: 4,
@@ -250,11 +250,11 @@ export default createStore({
       },
     ],
     productSelected: null, 
-    // per contenere gli articoli che verranno aggiunti:
+    // per contenere gli articoli che verranno aggiunti al carrello:
     cart:[],
     cartGlobal: 0,
   },
-  //serve per ottenere gli articoli che sono stati aggiunti al carrello
+  // per ottenere gli articoli che sono stati aggiunti al carrello
   getters: {
     cartItems: state => state.cart
   },
@@ -279,11 +279,11 @@ export default createStore({
     AZZERA_CARRELLO(state) {
       console.log("AZZERA_CARRELLO è stata chiamata.");
 
-      // Riporta ogni libro nel carrello alla sua quantità iniziale
-  state.cart.forEach(cartItem => {
+    // Riporta ogni libro nel carrello alla sua quantità iniziale
+    state.cart.forEach(cartItem => {
     let product = state.products.find(product => product.id === cartItem.id);
     if (product) {
-      product.inventory += cartItem.quantity; // aggiungi la quantità del carrello all'inventario
+      product.inventory += cartItem.quantity; // riaggiunge la quantità del carrello all'inventario
       product.cart = 0; // ripristina la quantità nel carrello a 0 per quel prodotto
     }
   });

@@ -80,9 +80,9 @@ export default {
   },
   methods: {
       addToCart() {
-        // aggiungere il prodotto al carrello qui
+        // aggiungere il prodotto al carrello
         this.productSelected.cart= this.productSelected.cart+1;
-        //esegue mutation sul vue store al posto di modificare il dato del prodotto direttamente
+        //esegue mutation dello store per aggiungere il prodotto selezionato al carrello
         this.$store.commit('addToCart', this.productSelected);
         this.productSelected.inventory--;
         this.$store.state.cartGlobal++;

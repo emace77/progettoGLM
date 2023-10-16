@@ -112,19 +112,20 @@ export default {
     showProduct(product) {
       this.$store.commit('selectProduct', product); 
     },
-    /* da invocare al click su Cerca */ 
     search() {
       const searchKey = this.searchTerm.toLowerCase(); // minuscolo per avere ricerca non case-sensitive
       this.searchResults = this.products.filter(product => {
-        // confronta la chiave di ricerca e il titolo o l'autore del prodotto
+        // confronta la chiave di ricerca con titolo, autore, editore
         const titleOk = product.title.toLowerCase().includes(searchKey);
         const authorOk = product.author.toLowerCase().includes(searchKey);
         const publisherOk = product.publisher.toLowerCase().includes(searchKey);
         // Restituisci true se uno degli attributi contiene la chiave di ricerca
         return titleOk || authorOk || publisherOk;
     });
+      // per mostrare la chiave di ricerca inserita
       this.searchMsg = this.searchTerm;
       this.searchTerm = '';
+      // per mostrare il numero di risultati della ricerca
       this.nResults = this.searchResults.length;
     },
         
@@ -132,10 +133,10 @@ export default {
       this.ErrorNumber = false;
       this.ErrorLength = false; 
       const searchKey = this.searchTermIsbn;
+      // per controllare che la chiave di ricerca sia un numero e che abbia 13 cifre 
       if (isNaN(searchKey) || searchKey.length !== 13) {
       this.ErrorNumber = isNaN(searchKey);
       this.ErrorLength = searchKey.length !== 13;
-      // Impostare le variabili di errore e interrompere l'esecuzione della funzione
       return;
     }
 
@@ -146,12 +147,10 @@ export default {
     },
 
     searchGenre() {
-      // Filtra i prodotti in base ai generi selezionati
+      // Filtra i libri in base ai generi selezionati
       this.searchResults = this.products.filter(product => {
         return this.selectedGenre.length === 0 || this.selectedGenre.includes(product.genre);
       });
-
-      // Imposta il numero di risultati
       this.nResults = this.searchResults.length;
     }
 
