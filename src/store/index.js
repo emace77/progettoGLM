@@ -52,7 +52,7 @@ export default createStore({
     products: [
       {
         id: 1,
-        title: "Il prigioniero dell’interno 7",
+        title: "Il prigioniero dell'interno 7",
         author: "Marco Presta",
         publisher: "Einaudi",
         genre: "narrativa italiana",
@@ -98,7 +98,7 @@ export default createStore({
         price: "17.80",
         image: "/images/avere tutto.jpg",
         text: "Libro vincitore del Premio Bagutta 2023. Dove vorresti essere con un milione di euro in più e parecchi anni in meno? Un figlio, il ritorno a casa, la partita finale con la sua famiglia. E quell’ossessione che lo muove da sempre: la vita è rischiare per avere tutto.",
-        plot: "I gabbiani a Rimini non urlano mai. In nessuna stagione dell’anno, neanche quando Sandro torna a casa dopo aver vissuto a Milano, e trova suo padre con la testa sempre più dura. Neanche quando passano i mesi e si accorge di essere rimasto lì con lui per affrontare la loro partita più grande, facendo un vecchio gioco: dove vorresti essere con un milione di euro in più e parecchi anni in meno? Da giovane Nando Pagliarani aveva il torace da nuotatore e un destino interrotto. Ha lavorato sui bus turistici, fatto il ferroviere, posseduto il bar America, ma l’unica voce che dovrebbe esserci sul suo documento d’identità è: ballerino. Perché lui e sua moglie hanno ballato come diavoli, in tutte le competizioni della riviera romagnola. Ballavano per vincere. Anche a Sandro piace vincere, è una malattia di famiglia. Ma la sua danza è pericolosa. Le prime volte al tavolo da gioco era lui il tizio da spennare, poi è diventato lo sbarbato da tenere d’occhio. Quel che è certo è che prima aveva un lavoro stabile e programmava con Giulia un futuro. E adesso? Cos’è rimasto a Sandro, che voleva avere tutto? Cosa rimane a ciascuno di noi, ogni volta che sfidiamo la fortuna? Marco Missiroli firma il suo romanzo più potente e maturo, raccontando la febbre di un giovane uomo pieno di slanci e difetti, di una città di provincia che vive alla grande solo una stagione all’anno, di una famiglia arsa dall’amore e dalla smania.",
+        plot: "I gabbiani a Rimini non urlano mai. In nessuna stagione dell'anno, neanche quando Sandro torna a casa dopo aver vissuto a Milano, e trova suo padre con la testa sempre più dura. Neanche quando passano i mesi e si accorge di essere rimasto lì con lui per affrontare la loro partita più grande, facendo un vecchio gioco: dove vorresti essere con un milione di euro in più e parecchi anni in meno? Da giovane Nando Pagliarani aveva il torace da nuotatore e un destino interrotto. Ha lavorato sui bus turistici, fatto il ferroviere, posseduto il bar America, ma l’unica voce che dovrebbe esserci sul suo documento d’identità è: ballerino. Perché lui e sua moglie hanno ballato come diavoli, in tutte le competizioni della riviera romagnola. Ballavano per vincere. Anche a Sandro piace vincere, è una malattia di famiglia. Ma la sua danza è pericolosa. Le prime volte al tavolo da gioco era lui il tizio da spennare, poi è diventato lo sbarbato da tenere d’occhio. Quel che è certo è che prima aveva un lavoro stabile e programmava con Giulia un futuro. E adesso? Cos’è rimasto a Sandro, che voleva avere tutto? Cosa rimane a ciascuno di noi, ogni volta che sfidiamo la fortuna? Marco Missiroli firma il suo romanzo più potente e maturo, raccontando la febbre di un giovane uomo pieno di slanci e difetti, di una città di provincia che vive alla grande solo una stagione all’anno, di una famiglia arsa dall’amore e dalla smania.",
         isbn: 9788175257667,
         inventory: 15,
         cart:0,
@@ -106,7 +106,7 @@ export default createStore({
       },
       {
         id: 4,
-        title: "Vicolo Sant’Andrea 9",
+        title: "Vicolo Sant'Andrea 9",
         author: "Manuela Faccon",
         publisher: "Feltrinelli",
         genre: "narrativa italiana",
